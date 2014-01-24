@@ -12,17 +12,29 @@ public class kirby_motion : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		var vertical = Input.GetAxis ("Vertical");
 		var horizontal = Input.GetAxis ("Horizontal");
 
 		if (horizontal > 0) {
-			animator.SetBool("Direction", true);
+			transform.localScale = new Vector3(1f,1f,1f);
+			animator.SetInteger("Direction", 2);
+			//move kirby
 			transform.position += transform.right * Time.deltaTime* 0.6f;
 		} else if (horizontal < 0) {
-			animator.SetBool("Direction", false);
+			transform.localScale = new Vector3(-1f,1f,-1f);
+			animator.SetInteger("Direction", 3);
+			//move kirby
 			transform.position -= transform.right * Time.deltaTime * 0.6f;
 		} else {
-			animator.SetBool("Direction", false);
+			//change state
+			var current_direction = animator.GetInteger ("Direction");
+			if (current_direction == 2) {
+				animator.SetInteger("Direction", 0);
+				transform.localScale = new Vector3(1f,1f,1f);
+			}
+			if (current_direction == 3) {
+				animator.SetInteger("Direction", 1);
+				transform.localScale = new Vector3(-1f,1f,-1f);
+			}
 		}
 	}
 }

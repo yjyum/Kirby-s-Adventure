@@ -4,7 +4,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -20,26 +20,8819 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 1024
+  textureFormat: -2
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Kirby_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4478
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4478
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 4478
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 4478
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 4478
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4478
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 4478
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4478
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 4478
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4488
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_14
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 4488
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4434
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4434
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4434
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_19
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4434
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_20
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 4434
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 4434
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4374
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4374
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4374
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_26
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4374
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_28
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4372
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 4374
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_30
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 4374
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_31
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 4374
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_32
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 4374
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_33
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 4374
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_34
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 4376
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_35
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4319
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4319
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_37
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 4339
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 4319
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_41
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4319
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_42
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 4319
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_43
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4319
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_45
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4319
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_46
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 4319
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_47
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 4319
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_48
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 4319
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_50
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4274
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_51
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_52
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4274
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_53
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_54
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 4274
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_55
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_56
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 4274
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_62
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 4226
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_63
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 4226
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_64
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 4226
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_65
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 4221
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_66
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4212
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_67
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 4221
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_68
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 4226
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_69
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 4226
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_71
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4158
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_72
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 4156
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_73
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 4156
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_74
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 4156
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_75
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 4156
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_76
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 4158
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_77
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4112
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_78
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 4110
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_79
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 4112
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_80
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 4108
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_81
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 4112
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_83
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4108
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_84
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 4112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_85
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 4112
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_86
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 4108
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_88
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 4112
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_89
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 4112
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_90
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 4112
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_91
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 4112
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_93
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 4089
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_94
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 4093
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_95
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 4093
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_96
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 4089
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_97
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4075
+        width: 621
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_98
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4040
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_99
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 4042
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_100
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4040
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_101
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4040
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_102
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4040
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_103
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4043
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_104
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 4040
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_105
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4042
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_106
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 4042
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_107
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 4040
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_108
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 4045
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_109
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 4042
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_110
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 4045
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_111
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 4040
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_112
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 4040
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_113
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 4040
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_114
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 4043
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_115
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 4040
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_116
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 4040
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_117
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4043
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_118
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 4031
+        width: 563
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_119
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3968
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_120
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3971
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_121
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3968
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_122
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3971
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_123
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3968
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_124
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 3971
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_125
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3968
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_126
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 3968
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_127
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 3971
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_128
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 3971
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_129
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3968
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_130
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 3968
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_131
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3968
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_132
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3968
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_133
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 3968
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_134
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3959
+        width: 565
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_135
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3897
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_136
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3901
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_137
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3901
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_138
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3899
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_139
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3897
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_140
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3897
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_141
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 3897
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_142
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 3899
+        width: 4
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_143
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 3897
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_144
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 3897
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_145
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3897
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_146
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3897
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_147
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 3897
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_148
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 3897
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_149
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 3897
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_150
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 3899
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_151
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 3897
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_152
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3907
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_153
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 3907
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_154
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3887
+        width: 628
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_155
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3824
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_156
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3825
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_157
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3825
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_158
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3827
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_159
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3824
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_160
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 3824
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_161
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 3824
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_162
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 3827
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_163
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 3825
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_164
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 3825
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_165
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 3825
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_166
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 3827
+        width: 4
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_167
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3824
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_168
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 3834
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_169
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3834
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_170
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3815
+        width: 470
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_171
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3780
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_172
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3775
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_173
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3781
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_174
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3781
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_175
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 3780
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_176
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3780
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_177
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 3780
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_178
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 3783
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_179
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 3780
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_180
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 3780
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_181
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3780
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_182
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3780
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_183
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3783
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_184
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3780
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_185
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 3780
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_186
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3757
+        width: 470
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_187
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3718
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_188
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3704
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_189
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 3704
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_190
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 3708
+        width: 4
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_191
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3730
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_192
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 3692
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_193
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 3692
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_194
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 3692
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_195
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3701
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_196
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3683
+        width: 125
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_197
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3683
+        width: 200
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_198
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 3683
+        width: 459
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_199
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3667
+        width: 43
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_200
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3667
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_201
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 3667
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_202
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3667
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_203
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3667
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_204
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3628
+        width: 4
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_205
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3667
+        width: 54
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_206
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3667
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_207
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3667
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_208
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3667
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_209
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 3628
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_210
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 3667
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_211
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 3667
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_212
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 3667
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_213
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 3667
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_214
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 3667
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_215
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3626
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_216
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3626
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_217
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3626
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_218
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3626
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_219
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 3626
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_220
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3636
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_221
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3636
+        width: 57
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_222
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3626
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_223
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3626
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_224
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 3626
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_225
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 3626
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_226
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3626
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_227
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 3639
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_228
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 3626
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_229
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 3626
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_230
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3626
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_231
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 3626
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_232
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3614
+        width: 155
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_233
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3614
+        width: 205
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_234
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3614
+        width: 233
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_235
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3591
+        width: 155
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_236
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3599
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_237
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3599
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_238
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_239
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_240
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_241
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 3596
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_242
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3560
+        width: 4
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_243
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3599
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_244
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3591
+        width: 205
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_245
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 3599
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_246
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_247
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_248
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_249
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3596
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_250
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 3560
+        width: 4
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_251
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3599
+        width: 64
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_252
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3591
+        width: 233
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_253
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 3599
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_254
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_255
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3599
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_256
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 3599
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_257
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3556
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_258
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3556
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_259
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3574
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_260
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 3556
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_261
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3556
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_262
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3556
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_263
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_264
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_265
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_266
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_267
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_268
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3556
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_269
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_270
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3556
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_271
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 3556
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_272
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3556
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_273
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 3556
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_274
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 3556
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_275
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 3556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_276
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3565
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_277
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3560
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_278
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3532
+        width: 204
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_279
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3532
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_280
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3532
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_281
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 3532
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_282
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3532
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_283
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3532
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_284
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3489
+        width: 37
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_285
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 3532
+        width: 497
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_286
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3532
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_287
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 3532
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_288
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 3532
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_289
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3532
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_290
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3489
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_291
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3489
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_292
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3491
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_293
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3489
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_294
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3489
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_295
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3489
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_296
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 3489
+        width: 66
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_297
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 3489
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_298
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 3489
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_299
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 3489
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_300
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 3489
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_301
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3489
+        width: 66
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_302
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 3489
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_303
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3466
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_304
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3465
+        width: 711
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_305
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3465
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_306
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 3465
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_307
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3465
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_308
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3465
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_309
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 3465
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_310
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3423
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_311
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3423
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_312
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3425
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_313
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3425
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_314
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 3423
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_315
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 3423
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_316
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 3423
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_317
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3423
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_318
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 3431
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_319
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 3425
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_320
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3423
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_321
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 3423
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_322
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 3423
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_323
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 3423
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_324
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 3423
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_325
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3423
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_326
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 3446
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_327
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 3446
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_328
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3398
+        width: 444
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_329
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3398
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_330
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3398
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_331
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3398
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_332
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3398
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_333
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3398
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_334
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3398
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_335
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 3300
+        width: 38
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_336
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3398
+        width: 291
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_337
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3398
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_338
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 3398
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_339
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3398
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_340
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 3398
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_341
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3398
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_342
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 3300
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_343
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3300
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_344
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 3303
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_345
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 3303
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_346
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 3358
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_347
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 3358
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_348
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 3358
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_349
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 3300
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_350
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 3303
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_351
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3303
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_352
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 3337
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_353
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 3337
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_354
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 3335
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_355
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 3300
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_356
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 3300
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_357
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3303
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_358
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3303
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_359
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 3300
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_360
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 3300
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_361
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3291
+        width: 690
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_362
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3275
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_363
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3275
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_364
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3275
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_365
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3275
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_366
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3275
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_367
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3275
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_368
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3234
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_369
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_370
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3234
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_371
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_372
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3234
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_373
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_374
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_375
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_376
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 3234
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_377
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 3234
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_378
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_379
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_380
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 3234
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_381
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_382
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_383
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_384
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_385
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 3234
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_386
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3234
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_387
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 3234
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_388
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 3234
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_389
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3224
+        width: 146
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_390
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3224
+        width: 284
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_391
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3224
+        width: 228
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_392
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3208
+        width: 64
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_393
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3208
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_394
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_395
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_396
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3134
+        width: 4
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_397
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3208
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_398
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3208
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_399
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_400
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_401
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 3134
+        width: 24
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_402
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3208
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_403
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3208
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_404
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 3208
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_405
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 3208
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_406
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_407
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 3208
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_408
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3131
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_409
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3169
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_410
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3169
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_411
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3147
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_412
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3136
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_413
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3140
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_414
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 3145
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_415
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 3145
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_416
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 3145
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_417
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3145
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_418
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 3145
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_419
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 3145
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_420
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 3145
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_421
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 3145
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_422
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3147
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_423
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 3147
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_424
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3131
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_425
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3134
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_426
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3134
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_427
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3122
+        width: 338
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_428
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3122
+        width: 354
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_429
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3106
+        width: 51
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_430
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3099
+        width: 338
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_431
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3106
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_432
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3106
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_433
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3106
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_434
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 3106
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_435
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 3067
+        width: 4
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_436
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3106
+        width: 75
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_437
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3099
+        width: 354
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_438
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 3106
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_439
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3106
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_440
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3106
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_441
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 3106
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_442
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3066
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_443
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3064
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_444
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3064
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_445
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3064
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_446
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3064
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_447
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3064
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_448
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3064
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_449
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3064
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_450
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 3064
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_451
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 3064
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_452
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3064
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_453
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3064
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_454
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3064
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_455
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 3064
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_456
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 3064
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_457
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 3064
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_458
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 3064
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_459
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 3064
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_460
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 3075
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_461
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 3075
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_462
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3055
+        width: 493
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_463
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3039
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_464
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3039
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_465
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3039
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_466
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3039
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_467
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3039
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_468
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3039
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_469
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2983
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_470
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2983
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_471
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2983
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_472
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2987
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_473
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2983
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_474
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2983
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_475
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2983
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_476
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2983
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_477
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2983
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_478
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2983
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_479
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2983
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_480
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 2983
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_481
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2983
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_482
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2974
+        width: 465
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_483
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2893
+        width: 4
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_484
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2974
+        width: 218
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_485
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2958
+        width: 51
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_486
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2958
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_487
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2958
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_488
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2958
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_489
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2958
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_490
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2958
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_491
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2958
+        width: 41
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_492
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2958
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_493
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2958
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_494
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 2958
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_495
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2958
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_496
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2958
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_497
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 2958
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_498
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2958
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_499
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 2930
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_500
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2916
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_501
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2916
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_502
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2916
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_503
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2916
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_504
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2916
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_505
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2895
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_506
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2909
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_507
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 2916
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_508
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2916
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_509
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 2916
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_510
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2916
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_511
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2930
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_512
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 2930
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_513
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2930
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_514
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2930
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_515
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2930
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_516
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 2930
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_517
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 2929
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_518
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 2930
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_519
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2929
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_520
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2879
+        width: 296
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_521
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2811
+        width: 4
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_522
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2879
+        width: 452
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_523
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2864
+        width: 53
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_524
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2864
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_525
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2864
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_526
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2864
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_527
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2864
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_528
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2864
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_529
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2864
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_530
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 2864
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_531
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2864
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_532
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2807
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_533
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2807
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_534
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2818
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_535
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2807
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_536
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_537
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_538
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2807
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_539
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_540
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2807
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_541
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_542
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2807
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_543
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2818
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_544
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2807
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_545
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_546
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2820
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_547
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_548
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 2807
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_549
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_550
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_551
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2807
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_552
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 2807
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_553
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 2807
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_554
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2783
+        width: 690
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_555
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2783
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_556
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2783
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_557
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2783
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_558
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2783
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_559
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2730
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_560
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2747
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_561
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2746
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_562
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2707
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_563
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2707
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_564
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2707
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_565
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2740
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_566
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2692
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_567
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2698
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_568
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2707
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_569
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 2707
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_570
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2707
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_571
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2705
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_572
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2682
+        width: 593
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_573
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2670
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_574
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2622
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_575
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2622
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_576
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 2619
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_577
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2619
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_578
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2619
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_579
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2624
+        width: 4
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_580
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2622
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_581
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2622
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_582
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 2610
+        width: 4
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_583
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2632
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_584
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2632
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_585
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2647
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_586
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2607
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_587
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 2614
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_588
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2600
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_589
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2598
+        width: 489
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_590
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2526
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_591
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2511
+        width: 4
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_592
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2526
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_593
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2526
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_594
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2526
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_595
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2526
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_596
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2529
+        width: 4
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_597
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 2526
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_598
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2526
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_599
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 2529
+        width: 4
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_600
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2526
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_601
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 2526
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_602
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2526
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_603
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 2526
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_604
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2565
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_605
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2514
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_606
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2528
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_607
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2529
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_608
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2498
+        width: 542
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_609
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2494
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_610
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2443
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_611
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2441
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_612
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2443
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_613
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2441
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_614
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2433
+        width: 4
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_615
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 2433
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_616
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2431
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_617
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 2436
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_618
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2436
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_619
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2431
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_620
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2424
+        width: 4
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_621
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2436
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_622
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2436
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_623
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 2436
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_624
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2436
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_625
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 2459
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_626
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2438
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_627
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2413
+        width: 498
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_628
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2364
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_629
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2364
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_630
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2366
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_631
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2357
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_632
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2359
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_633
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2355
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_634
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2361
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_635
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 2357
+        width: 4
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_636
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2354
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_637
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2357
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_638
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2354
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_639
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2357
+        width: 4
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_640
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2355
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_641
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2345
+        width: 500
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_642
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2301
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_643
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2308
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_644
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2311
+        width: 47
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_645
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2294
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_646
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2308
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_647
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 2266
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_648
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2280
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_649
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2280
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_650
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2280
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_651
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 2262
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_652
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2188
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_653
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2197
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_654
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2216
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_655
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2197
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_656
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2197
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_657
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2197
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_658
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2197
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_659
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2183
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_660
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2121
+        width: 495
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_661
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2121
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_662
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2113
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_663
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2107
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_664
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2107
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_665
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2107
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_666
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2113
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_667
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 2121
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_668
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2083
+        width: 638
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_669
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2083
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_670
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2083
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_671
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2083
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_672
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2083
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_673
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1976
+        width: 533
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_674
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1997
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_675
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2012
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_676
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2012
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_677
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2012
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_678
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 2012
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_679
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1989
+        width: 4
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_680
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1984
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_681
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1989
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_682
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2035
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_683
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2000
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_684
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1910
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_685
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1910
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_686
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1965
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_687
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1914
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_688
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1910
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_689
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1910
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_690
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1910
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_691
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1914
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_692
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1910
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_693
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1914
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_694
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1891
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_695
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1910
+        width: 55
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_696
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1900
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_697
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1925
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_698
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1925
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_699
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1930
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_700
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1902
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_701
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1879
+        width: 600
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_702
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1808
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_703
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1780
+        width: 4
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_704
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1808
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_705
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1808
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_706
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1808
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_707
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1808
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_708
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1808
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_709
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1808
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_710
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1808
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_711
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1808
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_712
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1808
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_713
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1808
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_714
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1854
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_715
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1789
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_716
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1808
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_717
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1819
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_718
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1784
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_719
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1768
+        width: 612
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_720
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1749
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_721
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1706
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_722
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1705
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_723
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1706
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_724
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1696
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_725
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1708
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_726
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1694
+        width: 4
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_727
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1699
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_728
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1705
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_729
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1705
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_730
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1699
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_731
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1694
+        width: 4
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_732
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1705
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_733
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1705
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_734
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1705
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_735
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1705
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_736
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1714
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_737
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1682
+        width: 588
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_738
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1678
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_739
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1631
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_740
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1631
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_741
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1631
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_742
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1629
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_743
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1620
+        width: 4
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_744
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1629
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_745
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1626
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_746
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1631
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_747
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1622
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_748
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1619
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_749
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1622
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_750
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1619
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_751
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1622
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_752
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1622
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_753
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1640
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_754
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1608
+        width: 621
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_755
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1543
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_756
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1543
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_757
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1538
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_758
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1543
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_759
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1539
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_760
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1543
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_761
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1543
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_762
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1543
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_763
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1525
+        width: 701
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_764
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1510
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_765
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1503
+        width: 701
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_766
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1510
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_767
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1510
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_768
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1439
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_769
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1439
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_770
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1439
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_771
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1439
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_772
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1467
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_773
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1417
+        width: 351
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_774
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1432
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_775
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1353
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_776
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1357
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_777
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1353
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_778
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1353
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_779
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1353
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_780
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1353
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_781
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1357
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_782
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1353
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_783
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1357
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_784
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1397
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_785
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1353
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_786
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1341
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_787
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1337
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_788
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1371
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_789
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1371
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_790
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1362
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_791
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1328
+        width: 597
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_792
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1327
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_793
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1256
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_794
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1232
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_795
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1236
+        width: 4
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_796
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1256
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_797
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1256
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_798
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1256
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_799
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1256
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_800
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1260
+        width: 4
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_801
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1256
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_802
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1256
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_803
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1260
+        width: 4
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_804
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1256
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_805
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1256
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_806
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1256
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_807
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1256
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_808
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_809
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1223
+        width: 646
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_810
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1167
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_811
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1164
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_812
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1167
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_813
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1163
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_814
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1156
+        width: 4
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_815
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1167
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_816
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1151
+        width: 4
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_817
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1156
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_818
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1161
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_819
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1161
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_820
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1156
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_821
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1151
+        width: 4
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_822
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1161
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_823
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1161
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_824
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1161
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_825
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1161
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_826
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1077
+        width: 561
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_827
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1086
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_828
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1086
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_829
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1086
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_830
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1085
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_831
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1086
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_832
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1082
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_833
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1088
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_834
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1080
+        width: 4
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_835
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1077
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_836
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1080
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_837
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1080
+        width: 4
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_838
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1080
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_839
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1068
+        width: 563
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_840
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1003
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_841
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1003
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_842
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1003
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_843
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1033
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_844
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1003
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_845
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1003
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_846
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1003
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_847
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 987
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_848
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 922
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_849
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 922
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_850
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 952
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_851
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 922
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_852
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 922
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_853
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 922
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_854
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 922
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_855
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 922
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_856
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 834
+        width: 653
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_857
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 834
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_858
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 822
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_859
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 808
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_860
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 808
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_861
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 824
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_862
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 836
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_863
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 836
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_864
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 799
+        width: 659
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_865
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 784
+        width: 44
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_866
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 784
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_867
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 784
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_868
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 784
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_869
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 784
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_870
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 709
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_871
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 709
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_872
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 709
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_873
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 709
+        width: 4
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_874
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 738
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_875
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 724
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_876
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 706
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_877
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 724
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_878
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 709
+        width: 4
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_879
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 715
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_880
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 741
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_881
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 697
+        width: 493
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_882
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 706
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_883
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 660
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_884
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 627
+        width: 37
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_885
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 627
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_886
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 627
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_887
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 627
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_888
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 676
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_889
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 609
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_890
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 618
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_891
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 627
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_892
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 646
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_893
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 627
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_894
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 637
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_895
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 653
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_896
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 600
+        width: 572
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_897
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 590
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_898
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 537
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_899
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 541
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_900
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 539
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_901
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 537
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_902
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 537
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_903
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 537
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_904
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 537
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_905
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 541
+        width: 4
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_906
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 541
+        width: 4
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_907
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 548
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_908
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 548
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_909
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 563
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_910
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 523
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_911
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 527
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_912
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 555
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_913
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 537
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_914
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 520
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_915
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 509
+        width: 572
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_916
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 437
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_917
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 414
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_918
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 440
+        width: 4
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_919
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 437
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_920
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 437
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_921
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 437
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_922
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 437
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_923
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 437
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_924
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 437
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_925
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 437
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_926
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 437
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_927
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 437
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_928
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 437
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_929
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 439
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_930
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 440
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_931
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 463
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_932
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 435
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_933
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 416
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_934
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 402
+        width: 578
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_935
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 393
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_936
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 342
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_937
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 340
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_938
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 342
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_939
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 338
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_940
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 332
+        width: 4
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_941
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 326
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_942
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 333
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_943
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 338
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_944
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 338
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_945
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 333
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_946
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 328
+        width: 4
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_947
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_948
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 338
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_949
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 338
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_950
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 338
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_951
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 338
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_952
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 280
+        width: 593
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_953
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 258
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_954
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 254
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_955
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 243
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_956
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 258
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_957
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 238
+        width: 4
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_958
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 282
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_959
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 280
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_960
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 280
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_961
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 284
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_962
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 280
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_963
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 286
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_964
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 282
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_965
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 236
+        width: 262
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_966
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 240
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_967
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 236
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_968
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 236
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_969
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 226
+        width: 653
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_970
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 159
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_971
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 190
+        width: 47
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_972
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 159
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_973
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 159
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_974
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 159
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_975
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 159
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_976
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 159
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_977
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 133
+        width: 495
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_978
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 159
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_979
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 159
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_980
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 69
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_981
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 69
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_982
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 61
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_983
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 55
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_984
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 54
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_985
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 55
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_986
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 61
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_987
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 69
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_988
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_989
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_990
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_991
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_992
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 11
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_993
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 6
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_994
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_995
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 6
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Kirby_996
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

@@ -18,12 +18,12 @@ public class kirby_motion : MonoBehaviour {
 			transform.localScale = new Vector3(1f,1f,1f);
 			animator.SetBool("Direction", true);
 			//move kirby
-			transform.position += transform.right * Time.deltaTime* 0.6f;
+			transform.position += transform.right * Time.deltaTime* 0.8f;
 		} else if (horizontal < 0) {
 			transform.localScale = new Vector3(-1f,1f,-1f);
 			animator.SetBool("Direction", true);
 			//move kirby
-			transform.position -= transform.right * Time.deltaTime * 0.6f;
+			transform.position -= transform.right * Time.deltaTime * 0.8f;
 		} else {
 			animator.SetBool("Direction", false);
 		}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb298b8e22dee1d409971fdf73a2bfbf
+guid: fee7dfeb000985e4ab7ac41fbe91d7df
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -38,23 +38,19 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: iPhone
-    maxTextureSize: 1024
-    textureFormat: -2
-    compressionQuality: 50
+  buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Kirby-walk_0
+    - name: kirby_walk_0
       rect:
         serializedVersion: 2
         x: 11
-        y: 8
-        width: 28
-        height: 28
+        y: 7
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Kirby-walk_1
+    - name: kirby_walk_1
       rect:
         serializedVersion: 2
         x: 46
@@ -63,7 +59,7 @@ TextureImporter:
         height: 28
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Kirby-walk_2
+    - name: kirby_walk_2
       rect:
         serializedVersion: 2
         x: 90
@@ -71,8 +67,8 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: Kirby-walk_3
+      pivot: {x: 0, y: 0}
+    - name: kirby_walk_3
       rect:
         serializedVersion: 2
         x: 125
@@ -81,7 +77,7 @@ TextureImporter:
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: Kirby-walk_4
+    - name: kirby_walk_4
       rect:
         serializedVersion: 2
         x: 160
@@ -90,7 +86,7 @@ TextureImporter:
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: Kirby-walk_5
+    - name: kirby_walk_5
       rect:
         serializedVersion: 2
         x: 195
@@ -99,25 +95,25 @@ TextureImporter:
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: Kirby-walk_6
+    - name: kirby_walk_6
       rect:
         serializedVersion: 2
         x: 238
         y: 8
-        width: 15
+        width: 16
         height: 28
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Kirby-walk_7
+    - name: kirby_walk_7
       rect:
         serializedVersion: 2
         x: 304
-        y: 8
-        width: 86
-        height: 30
+        y: 7
+        width: 85
+        height: 26
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Kirby-walk_11
+    - name: kirby_walk_11
       rect:
         serializedVersion: 2
         x: 269

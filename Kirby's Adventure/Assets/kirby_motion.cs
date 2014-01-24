@@ -16,25 +16,16 @@ public class kirby_motion : MonoBehaviour {
 
 		if (horizontal > 0) {
 			transform.localScale = new Vector3(1f,1f,1f);
-			animator.SetInteger("Direction", 2);
+			animator.SetBool("Direction", true);
 			//move kirby
 			transform.position += transform.right * Time.deltaTime* 0.6f;
 		} else if (horizontal < 0) {
 			transform.localScale = new Vector3(-1f,1f,-1f);
-			animator.SetInteger("Direction", 3);
+			animator.SetBool("Direction", true);
 			//move kirby
 			transform.position -= transform.right * Time.deltaTime * 0.6f;
 		} else {
-			//change state
-			var current_direction = animator.GetInteger ("Direction");
-			if (current_direction == 2) {
-				animator.SetInteger("Direction", 0);
-				transform.localScale = new Vector3(1f,1f,1f);
-			}
-			if (current_direction == 3) {
-				animator.SetInteger("Direction", 1);
-				transform.localScale = new Vector3(-1f,1f,-1f);
-			}
+			animator.SetBool("Direction", false);
 		}
 	}
 }

@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\kirby_motion.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\kirby\kirby_motion.cs">
     <Files>
-      <File FileName="Assets\kirby_motion.cs" Line="24" Column="40" />
+      <File FileName="Assets\kirby\kirby_motion.cs" Line="35" Column="24" />
+      <File FileName="..\..\..\..\..\..\Downloads\Mario Tutorial\Assets\__Scripts\Mario.cs" Line="27" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

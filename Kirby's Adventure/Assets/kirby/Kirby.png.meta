@@ -23,7 +23,7 @@ TextureImporter:
   textureFormat: -2
   maxTextureSize: 4096
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -107,19 +107,19 @@ TextureImporter:
     - name: Kirby_11
       rect:
         serializedVersion: 2
-        x: 268
-        y: 4478
-        width: 30
-        height: 18
+        x: 270
+        y: 4480
+        width: 28
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_12
       rect:
         serializedVersion: 2
         x: 303
-        y: 4478
-        width: 41
-        height: 26
+        y: 4479
+        width: 40
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_13

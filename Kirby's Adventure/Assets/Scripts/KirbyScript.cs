@@ -37,4 +37,12 @@ public class KirbyScript : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other) {
 		grounded = false;
 	}
+
+	void OnCollisionEnter2D(Collision2D col) {
+		// kirby died
+		if (col.gameObject.tag.Equals("Enemy")) {
+			Debug.Log("collision kirby");
+			Application.LoadLevel ("Vegetable Valley 1");
+		}
+	}
 }

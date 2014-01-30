@@ -29,10 +29,4 @@ public class EnimyScript : MonoBehaviour {
 		moveScripte.enabled = true;
 	}
 
-	void OnCollisionEnter(Collision col) {
-		Debug.Log("collision");
-		if (col.gameObject.name.Equals("kirby")) {
-			Debug.Log("collision kirby");
-		}
-	}
 }

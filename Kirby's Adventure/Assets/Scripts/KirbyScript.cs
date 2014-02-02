@@ -3,9 +3,6 @@ using System.Collections;
 
 public class KirbyScript : MonoBehaviour {
 
-	//public float		speed = 6;
-	//public float		jumpSpeed = 5;
-	//public float		jumpAcc = 1;
 	public float		walkSpeed = 6f;
 	public float 		dashSpeed = 7.2f;
 	public float		flySpeed = 4.4f;
@@ -27,6 +24,7 @@ public class KirbyScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = this.GetComponent<Animator>();
+		SingletonScript.Instance.kirby_animator = animator;
 	}
 
 	// Update is called once per frame
@@ -35,16 +33,7 @@ public class KirbyScript : MonoBehaviour {
 		float vertical = Input.GetAxis ("Vertical");
 		
 		Vector2 vel = rigidbody2D.velocity;
-		/*
-		vel.x = h*speed;
-		
-		if (Input.GetKeyDown(KeyCode.X) ) {
-			if (grounded) vel.y = jumpSpeed;
-		}
-		if (Input.GetKey(KeyCode.X) ) {
-			if (!grounded) vel.y += jumpAcc * Time.deltaTime;
-		}
-		*/
+
 		if (animator.GetBool("withAir")) {
 			rigidbody2D.gravityScale = flyGravity;
 			horSpeed = flySpeed;
@@ -129,6 +118,11 @@ public class KirbyScript : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.X)
 		    && !animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_duck")) {
 			if (animator.GetBool("withAir")) {
+				if (SingletonScript.Instance.current_enemy) {
+					if ((SingletonScript.Instance.current_enemy.transform.position - transform.position).magnitude <= 2) {
+						Destroy(SingletonScript.Instance.current_enemy);
+					}
+				}
 				animator.SetBool("withAir", false);
 			} else {
 				animator.SetBool("inhale", true);

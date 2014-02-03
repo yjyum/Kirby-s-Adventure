@@ -178,7 +178,16 @@ public class KirbyScript : MonoBehaviour {
 			}
 		}
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {
+<<<<<<< HEAD
 			vel.x = transform.localScale.x * slideSpeed;
+=======
+			vel.x = transform.localScale.x * dashSpeed;
+			if (SingletonScript.Instance.current_enemy) {
+				if ((SingletonScript.Instance.current_enemy.transform.position - transform.position).magnitude <= 2) {
+					Destroy(SingletonScript.Instance.current_enemy);
+				}
+			}
+>>>>>>> f4af94c88ccd198749c035e050c49c20991992ab
 		}
 		
 		rigidbody2D.velocity = vel;

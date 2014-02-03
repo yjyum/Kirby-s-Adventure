@@ -151,6 +151,11 @@ public class KirbyScript : MonoBehaviour {
 		}
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {
 			vel.x = transform.localScale.x * dashSpeed;
+			if (SingletonScript.Instance.current_enemy) {
+				if ((SingletonScript.Instance.current_enemy.transform.position - transform.position).magnitude <= 2) {
+					Destroy(SingletonScript.Instance.current_enemy);
+				}
+			}
 		}
 		
 		rigidbody2D.velocity = vel;

@@ -29,7 +29,7 @@ public class EnimyScript : MonoBehaviour {
 				Debug.Log("current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
-			if ((kirby.transform.position - transform.position).magnitude <= 1 &&
+			if ((kirby.transform.position - transform.position).magnitude <= 2 &&
 			    SingletonScript.Instance.kirby_animator.GetBool("inhale") == true) {
 				Debug.Log("inhale close");
 				Destroy(gameObject);

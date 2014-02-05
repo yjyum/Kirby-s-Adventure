@@ -27,7 +27,7 @@ public class EnemyScript : MonoBehaviour {
 			}
 		} else {
 			if ((kirby.transform.position - transform.position).magnitude <= KirbyScript.kirbyAttackDis) {
-				Debug.Log(this + "current enemy change");
+			//	Debug.Log(this + "current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
 			/*

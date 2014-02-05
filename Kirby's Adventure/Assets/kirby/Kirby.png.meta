@@ -20,7 +20,7 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -2
+  textureFormat: -1
   maxTextureSize: 4096
   textureSettings:
     filterMode: 0
@@ -287,10 +287,10 @@ TextureImporter:
     - name: Kirby_34
       rect:
         serializedVersion: 2
-        x: 435
-        y: 4376
-        width: 30
-        height: 28
+        x: 436
+        y: 4377
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_35
@@ -314,9 +314,9 @@ TextureImporter:
     - name: Kirby_37
       rect:
         serializedVersion: 2
-        x: 85
-        y: 4339
-        width: 6
+        x: 83
+        y: 4340
+        width: 10
         height: 10
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -1801,8 +1801,8 @@ TextureImporter:
         serializedVersion: 2
         x: 11
         y: 3626
-        width: 34
-        height: 26
+        width: 33
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_216
@@ -1811,7 +1811,7 @@ TextureImporter:
         x: 59
         y: 3626
         width: 35
-        height: 26
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_217

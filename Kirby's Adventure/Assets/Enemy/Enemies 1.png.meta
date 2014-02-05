@@ -20,7 +20,7 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -2
+  textureFormat: -1
   maxTextureSize: 4096
   textureSettings:
     filterMode: 0
@@ -62,10 +62,10 @@ TextureImporter:
     - name: Enemies 1_2
       rect:
         serializedVersion: 2
-        x: 175
-        y: 1074
-        width: 8
-        height: 8
+        x: 173
+        y: 1072
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 

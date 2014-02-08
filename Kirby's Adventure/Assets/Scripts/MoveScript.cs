@@ -18,4 +18,14 @@ public class MoveScript : MonoBehaviour {
 
 	}
 
+	public void ChangeDirection () {
+		Debug.Log ("speed = "+speed);
+		Vector3 curr_scale = transform.localScale;
+		transform.localScale = new Vector3(curr_scale.x*-1f,curr_scale.y*1f,1f);
+		speed = - speed;
+		Vector3 curr_pos = transform.position;
+		curr_pos.x += 0.1f * speed;
+		transform.position = curr_pos;
+	}
+
 }

@@ -8,7 +8,6 @@ public class SingletonScript : MonoBehaviour {
 
 	public Animator kirby_animator;
 	public GameObject current_enemy;
-	public bool toReset = false;
 
 	void Awake () {
 		instance = this;

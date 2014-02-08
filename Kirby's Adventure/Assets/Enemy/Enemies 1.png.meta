@@ -68,5 +68,14 @@ TextureImporter:
         height: 12
       alignment: 0
       pivot: {x: .5, y: .5}
+    - name: Enemies 1_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 474
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

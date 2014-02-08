@@ -28,7 +28,8 @@ public class PuffAttack : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		Debug.Log("puff attack on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals("Enemy")) {
-			SingletonScript.Instance.toReset = true;
+			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
+			es.Reset();
 		}
 		Destroy (gameObject);
 	}

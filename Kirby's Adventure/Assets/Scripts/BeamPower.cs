@@ -46,7 +46,8 @@ public class BeamPower : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		Debug.Log("star power on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals(aimTag)) {
-			SingletonScript.Instance.toReset = true;
+			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
+			es.Reset();
 		}
 	}
 	

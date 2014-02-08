@@ -3,11 +3,12 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
-	private bool hasSpawn;
-	private bool hasEnterCamera;
+	private bool hasSpawn = false;
+	private bool hasEnterCamera = false;
 	private MoveScript moveScripte;
 	private GameObject kirby;
 	private Vector3 originalPosition;
+	private float enemyScale = 3f;
 
 	//public Transform kirby;
 	public int cameraRange = 6;
@@ -46,38 +47,41 @@ public class EnemyScript : MonoBehaviour {
 				EnemyAttack();
 			}
 		}
-
-		if (SingletonScript.Instance.toReset && gameObject == SingletonScript.Instance.current_enemy) {
-			Reset ();
-			SingletonScript.Instance.toReset = false;
-		}
 	}
 
 	private void Spwan () {
-		transform.localScale = new Vector3 (3f, 3f , 0);
+		moveScripte.enabled = true;
+		moveScripte.speed = -2f;
+		transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
 		hasSpawn = true;
 		collider2D.enabled = true;
-		moveScripte.enabled = true;
+		transform.position = originalPosition;
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		// enemy reach edge
-		if (col.gameObject.tag.Equals("EdgePlatform")) {
-			Debug.Log(this + "enemy collision edge");
-			Reset();
-		}
-		// collide with kirby
-		if (col.gameObject.tag.Equals("Player") && hasSpawn) {
-			if (SingletonScript.Instance.kirby_animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
-				SingletonScript.Instance.toReset = true;
-			} else { // kirby died
-				Debug.Log(this + "collision kirby");
-				Application.LoadLevel ("Vegetable Valley 1");
+		if (hasSpawn) {
+			// enemy reach edge
+			if (col.gameObject.tag.Equals("EdgePlatform")) {
+				Debug.Log(this + "enemy collision edge 1");
+				Reset();
+			}
+			if (col.gameObject.tag.Equals("BottonPlatform")) {
+				Debug.Log(this + "enemy collision edge 2");
+				moveScripte.ChangeDirection();
+			}
+			// collide with kirby
+			if (col.gameObject.tag.Equals("Player")) {
+				if (SingletonScript.Instance.kirby_animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
+					Reset();
+				} else { // kirby died
+					Debug.Log(this + "collision kirby");
+					Application.LoadLevel ("Vegetable Valley 1");
+				}
 			}
 		}
 	}
 
-	private void Reset() {
+	public void Reset() {
 		moveScripte.enabled = false;
 		hasSpawn = false;
 		transform.localScale = new Vector3 (0, 0, 0);

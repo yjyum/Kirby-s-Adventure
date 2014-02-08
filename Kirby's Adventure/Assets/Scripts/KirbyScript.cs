@@ -96,14 +96,7 @@ public class KirbyScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		if (col.gameObject.tag.Equals("Enemy")) {
-			if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
-				Destroy (col.gameObject);
-			} else { // kirby died
-				Debug.Log(this + "collision kirby");
-				Application.LoadLevel ("Vegetable Valley 1");
-			}
-		}
+
 	}
 
 

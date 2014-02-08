@@ -13,7 +13,7 @@ public class StarPower : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		Debug.Log("star power on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals("Enemy")) {
-			Destroy (col.gameObject);
+			SingletonScript.Instance.toReset = true;
 		}
 		Destroy (gameObject);
 	}

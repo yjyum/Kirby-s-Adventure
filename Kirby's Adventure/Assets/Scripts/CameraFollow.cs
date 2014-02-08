@@ -6,14 +6,13 @@ public class CameraFollow : MonoBehaviour {
 	public Transform 	poi; // Point of Interest
 	public float		u;
 	public Vector3		offset = new Vector3(0,0,-5);
-	public float screenEdgeLeft = -16.2f; 
+	public float screenEdgeLeft = -17.8f; 
 	public float screenEdgeRight = 11.5f;
-	public float screenEdgeTop = 14f; 
+	public float screenEdgeTop = 7.5f; 
 	public float screenEdgeBotton = 7f;
 	
 	// Use this for initialization
 	void Start () {
-
 	}
 	
 	// Update is called once per frame

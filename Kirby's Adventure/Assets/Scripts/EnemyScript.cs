@@ -3,12 +3,12 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
-	private bool hasSpawn = false;
-	private bool hasEnterCamera = false;
+	public bool hasSpawn = false;
+	public bool hasEnter = false;
 	private MoveScript moveScripte;
 	private GameObject kirby;
 	private Vector3 originalPosition;
-	private float enemyScale = 3f;
+	private float enemyScale = 4f;
 
 	//public Transform kirby;
 	public int cameraRange = 6;
@@ -18,7 +18,6 @@ public class EnemyScript : MonoBehaviour {
 		moveScripte = GetComponent<MoveScript> ();
 		moveScripte.enabled = false;
 		hasSpawn = false;
-		hasEnterCamera = false;
 		transform.localScale = new Vector3 (0, 0, 0);
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
@@ -27,15 +26,10 @@ public class EnemyScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if ((kirby.transform.position - transform.position).magnitude > cameraRange) {
-			hasEnterCamera = false;
+			hasEnter = false;
 		}
 
-		if (hasSpawn == false) {
-			if ((kirby.transform.position - transform.position).magnitude <= cameraRange && hasEnterCamera == false) {
-				Spwan ();
-				hasEnterCamera = true;
-			}
-		} else {
+		if (hasSpawn == true) {
 			if ((kirby.transform.position - transform.position).magnitude <= KirbyScript.kirbyAttackDis) {
 			//	Debug.Log(this + "current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
@@ -49,7 +43,7 @@ public class EnemyScript : MonoBehaviour {
 		}
 	}
 
-	private void Spwan () {
+	public void Spwan () {
 		moveScripte.enabled = true;
 		moveScripte.speed = -2f;
 		transform.localScale = new Vector3 (enemyScale,enemyScale , 0);

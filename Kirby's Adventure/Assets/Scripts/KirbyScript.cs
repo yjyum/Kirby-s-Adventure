@@ -27,7 +27,7 @@ public class KirbyScript : MonoBehaviour {
 	public Vector2 		vel;
 	
 	public bool			grounded = true;
-
+	public int 			cameraRange = 6;
 	// animator.powerType; 
 	// 0:inhale	 1: beam 	2: spark	2:fire
 
@@ -85,6 +85,19 @@ public class KirbyScript : MonoBehaviour {
 		}
 		
 		rigidbody2D.velocity = vel;
+
+		// enemy
+		GameObject[] gos = GameObject.FindGameObjectsWithTag("Enemy"); 
+
+		foreach (GameObject go in gos) {
+			float distance = Vector3.Distance(transform.position, go.transform.position);
+			Debug.Log("Distance : " + distance);
+			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
+			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
+				es.hasEnter = true;
+				es.Spwan ();
+			}
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

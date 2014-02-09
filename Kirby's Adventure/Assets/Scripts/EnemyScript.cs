@@ -3,44 +3,63 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
-	public bool hasSpawn = false;
-	public bool hasEnter = false;
-	private MoveScript moveScripte;
-	private GameObject kirby;
-	private Vector3 originalPosition;
-	private float enemyScale = 4f;
+	public bool 		hasSpawn = false;
+	public bool 		hasEnter = false;
+	public GameObject	beamPrefab;
+
+	private float		jumpSpeed = 15f;
+	private float		jumpAcc = 0.5f;
+	private MoveScript	moveScripte;
+	private GameObject 	kirby;
+	private Vector3 	originalPosition;
+	private float 		enemyScale = 4f;
 
 	//public Transform kirby;
 	public int cameraRange = 6;
 	public static float enemyAttackDis = 2.5f;
 
-	void Start () {
+	void Awake() {
 		moveScripte = GetComponent<MoveScript> ();
 		moveScripte.enabled = false;
 		hasSpawn = false;
 		transform.localScale = new Vector3 (0, 0, 0);
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
+		InvokeRepeating("EnemyAttack", 5, 1);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if ((kirby.transform.position - transform.position).magnitude > cameraRange) {
+		if (Mathf.Abs(kirby.transform.position.x - transform.position.x) > cameraRange) {
 			hasEnter = false;
 		}
 
 		if (hasSpawn == true) {
-			if ((kirby.transform.position - transform.position).magnitude <= KirbyScript.kirbyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= KirbyScript.kirbyAttackDis) {
 			//	Debug.Log(this + "current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
 
-			if ((kirby.transform.position - transform.position).magnitude <= enemyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= enemyAttackDis) {
 				Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
-				EnemyAttack();
 			}
+
 		}
+	}
+
+	void FixedUpdate() {
+		Vector2 vel = rigidbody2D.velocity;
+
+		if (vel.y > 0) {
+			vel.y += jumpAcc * Time.deltaTime;
+		}
+		/*
+		if (vel.y > 30) {
+			vel.y = 0f;
+		}
+*/
+		rigidbody2D.velocity = vel;
 	}
 
 	public void Spwan () {
@@ -76,12 +95,24 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	public void Reset() {
-		moveScripte.enabled = false;
-		hasSpawn = false;
-		transform.localScale = new Vector3 (0, 0, 0);
 		transform.position = originalPosition;
+		moveScripte.enabled = false;
+		transform.localScale = new Vector3 (0, 0, 0);
+		hasSpawn = false;
 	}
 
-	void EnemyAttack() {
+	private void EnemyAttack() {
+		if (hasSpawn) {
+			float action = Random.Range(0f, 10f)*10%2;
+			//Debug.Log (action);
+
+			if (action >= 1) {
+				Vector2 vel = rigidbody2D.velocity;
+				vel.y = jumpSpeed;
+				rigidbody2D.velocity = vel;
+			} else {
+
+			}
+		}
 	}
 }

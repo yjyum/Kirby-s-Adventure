@@ -34,10 +34,12 @@ public class Inhale : MonoBehaviour {
 		if (col.gameObject.tag.Equals("Enemy")) {
 			Debug.Log("inhaleParticle on collision with" + col.gameObject);
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
-			es.Reset();
-			character.GetComponent<Animator>().SetBool("withEnemy", true);
-			character.GetComponent<Animator>().SetBool("executing", false);
-			character.GetComponent<Animator>().SetFloat("powerType", 1f); //different power TODO
+			if (es.hasSpawn) {
+				es.Reset();
+				character.GetComponent<Animator>().SetBool("withEnemy", true);
+				character.GetComponent<Animator>().SetBool("executing", false);
+				character.GetComponent<Animator>().SetFloat("powerType", 1f); //different power TODO
+			}
 		}
 		//Destroy (gameObject);
 	}

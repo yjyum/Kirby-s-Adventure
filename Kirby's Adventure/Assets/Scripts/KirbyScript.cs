@@ -85,15 +85,19 @@ public class KirbyScript : MonoBehaviour {
 		}
 		
 		rigidbody2D.velocity = vel;
+	}
 
+	void FixedUpdate () {
 		// enemy
 		GameObject[] gos = GameObject.FindGameObjectsWithTag("Enemy"); 
-
+		
 		foreach (GameObject go in gos) {
-			float distance = Vector3.Distance(transform.position, go.transform.position);
-			Debug.Log("Distance : " + distance);
+			float distance = Mathf.Abs(transform.position.x - go.transform.position.x);
+			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
 			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
+				Debug.Log("Spawn");
+				Debug.Log(go + " Distance : " + distance);
 				es.hasEnter = true;
 				es.Spwan ();
 			}

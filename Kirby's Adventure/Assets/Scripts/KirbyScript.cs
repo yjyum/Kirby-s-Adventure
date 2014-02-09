@@ -44,7 +44,7 @@ public class KirbyScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float horizontal = Input.GetAxis ("Horizontal");
-		float vertical = Input.GetAxis ("Vertical");
+//		float vertical = Input.GetAxis ("Vertical");
 		
 		Vector2 vel = rigidbody2D.velocity;
 
@@ -96,8 +96,8 @@ public class KirbyScript : MonoBehaviour {
 			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
 			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
-				Debug.Log("Spawn");
-				Debug.Log(go + " Distance : " + distance);
+			//	Debug.Log("Spawn");
+			//	Debug.Log(go + " Distance : " + distance);
 				es.hasEnter = true;
 				es.Spwan ();
 			}
@@ -113,16 +113,7 @@ public class KirbyScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		/*
-		if (col.gameObject.tag.Equals("Enemy")) {
-			if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
-				SingletonScript.Instance.toReset = true;
-			} else { // kirby died
-				Debug.Log(this + "collision kirby");
-				Application.LoadLevel ("Vegetable Valley 1");
-			}
-		}
-		*/
+
 	}
 
 
@@ -136,6 +127,16 @@ public class KirbyScript : MonoBehaviour {
 			startPos.x += dir * renderer.bounds.size.x / 2;
 			
 			GameObject inh = Instantiate (inhalePrefab) as GameObject;
+			inh.GetComponent<Inhale>().SetDirection (dir);
+			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetRange (0.1f, 0f);
+
+			inh = Instantiate (inhalePrefab) as GameObject;
+			inh.GetComponent<Inhale>().SetDirection (dir);
+			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetRange (0.5f , 0.2f);
+
+			inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
 			
@@ -302,6 +303,24 @@ public class KirbyScript : MonoBehaviour {
 				vel.y = 0f;
 			}
 			animator.SetBool("jump", false);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (grounded) {
+				vel.y = jumpSpeed;
+			}
+		}
+		
+		if (Input.GetKey (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (!grounded && vel.y > 0) {
+				vel.y += jumpAcc * Time.deltaTime;
+			}
+		}
+		
+		if (Input.GetKeyUp (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (!grounded && vel.y > 0) {
+				vel.y = 0f;
+			}
 		}
 	}
 	#endregion

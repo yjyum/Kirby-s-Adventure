@@ -15,6 +15,7 @@ public class StarPower : MonoBehaviour {
 		if (col.gameObject.tag.Equals("Enemy")) {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			es.Reset();
+			SingletonScript.Instance.score += 100;
 		}
 		Destroy (gameObject);
 	}

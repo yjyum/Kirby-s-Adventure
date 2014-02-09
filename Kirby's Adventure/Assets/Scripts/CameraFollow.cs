@@ -5,7 +5,7 @@ public class CameraFollow : MonoBehaviour {
 
 	public Transform 	poi; // Point of Interest
 	public float		u;
-	public Vector3		offset = new Vector3(0,-5,-5);
+	public Vector3		offset = new Vector3(0,0,-5);
 	public float screenEdgeLeft = -17.73f; 
 	public float screenEdgeRight = 11.5f;
 	public float screenEdgeTop = 7.5f; 
@@ -33,6 +33,7 @@ public class CameraFollow : MonoBehaviour {
 		if (pos.y < screenEdgeBotton) {
 			pos.y = screenEdgeBotton;
 		}
+		pos.y -= 1f;
 		transform.position = pos;
 	}
 }

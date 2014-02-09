@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34dde79b0a3237748a098658cdc5a8e7
+guid: bb7325bf5a2c7c6479663ff6b4cd626e
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -21,9 +21,9 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 1024
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -41,58 +41,58 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Enemies 1_0
+    - name: blood_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1074
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 125
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Enemies 1_1
+    - name: blood_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 1074
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 99
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Enemies 1_2
+    - name: blood_2
       rect:
         serializedVersion: 2
-        x: 173
-        y: 1072
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 81
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Enemies 1_3
+    - name: blood_3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 474
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 63
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Enemies 1_4
+    - name: blood_4
       rect:
         serializedVersion: 2
-        x: 116
-        y: 474
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 45
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
-    - name: Enemies 1_5
+    - name: blood_5
       rect:
         serializedVersion: 2
-        x: 272
-        y: 436
-        width: 3
-        height: 49
+        x: 0
+        y: 0
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 

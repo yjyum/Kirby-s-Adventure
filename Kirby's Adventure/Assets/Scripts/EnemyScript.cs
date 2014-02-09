@@ -3,20 +3,28 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
+	public bool 		canJump = true;
+	public bool 		hasPower = true;
+	public int 			powerType = 0;
+
 	public bool 		hasSpawn = false;
 	public bool 		hasEnter = false;
-	public GameObject	beamPrefab;
 
-	private float		jumpSpeed = 15f;
-	private float		jumpAcc = 0.5f;
+	private float 		speed;
+	private float		jumpSpeed = 4f;
+	private float		jumpAcc = 3f;
 	private MoveScript	moveScripte;
 	private GameObject 	kirby;
 	private Vector3 	originalPosition;
 	private float 		enemyScale = 4f;
+	private float		beamTime = 0.8f;
+	private bool		executing = false;
 
 	//public Transform kirby;
 	public int cameraRange = 6;
 	public static float enemyAttackDis = 2.5f;
+
+	public GameObject	beamPrefab;
 
 	void Awake() {
 		moveScripte = GetComponent<MoveScript> ();
@@ -25,7 +33,8 @@ public class EnemyScript : MonoBehaviour {
 		transform.localScale = new Vector3 (0, 0, 0);
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
-		InvokeRepeating("EnemyAttack", 5, 1);
+		speed = moveScripte.speed;
+		InvokeRepeating("EnemyAttack", 0f, 1.8f);
 	}
 
 	// Update is called once per frame
@@ -41,10 +50,21 @@ public class EnemyScript : MonoBehaviour {
 			}
 
 			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= enemyAttackDis) {
-				Debug.Log(this + "attack kirby");
+			//	Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
+		}
 
+		if (executing) {
+			beamTime -= Time.deltaTime;
+			if (beamTime <= 0) {
+				beamTime = 1f;
+				executing = false;
+				moveScripte.speed = speed;
+			} else {
+			//	Debug.Log ("enemy executs power");
+				moveScripte.speed = 0f;
+			}
 		}
 	}
 
@@ -54,11 +74,7 @@ public class EnemyScript : MonoBehaviour {
 		if (vel.y > 0) {
 			vel.y += jumpAcc * Time.deltaTime;
 		}
-		/*
-		if (vel.y > 30) {
-			vel.y = 0f;
-		}
-*/
+
 		rigidbody2D.velocity = vel;
 	}
 
@@ -86,9 +102,14 @@ public class EnemyScript : MonoBehaviour {
 			if (col.gameObject.tag.Equals("Player")) {
 				if (SingletonScript.Instance.kirby_animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
 					Reset();
+					SingletonScript.Instance.score += 100;
 				} else { // kirby died
-					Debug.Log(this + "collision kirby");
-					Application.LoadLevel ("Vegetable Valley 1");
+					Debug.Log(SingletonScript.Instance.kirby_life);
+					SingletonScript.Instance.kirby_life --;
+					Reset();
+					if (SingletonScript.Instance.kirby_life % 6 == 0) {
+						Application.LoadLevel ("Vegetable Valley 1");
+					}
 				}
 			}
 		}
@@ -104,14 +125,28 @@ public class EnemyScript : MonoBehaviour {
 	private void EnemyAttack() {
 		if (hasSpawn) {
 			float action = Random.Range(0f, 10f)*10%2;
-			//Debug.Log (action);
 
-			if (action >= 1) {
+			if (action >= 1 && canJump) {
 				Vector2 vel = rigidbody2D.velocity;
 				vel.y = jumpSpeed;
 				rigidbody2D.velocity = vel;
-			} else {
+			} 
 
+			if (action < 1 && hasPower){
+				executing = true;
+
+				float dir = -Mathf.Sign (transform.localScale.x);
+				Vector3 startPos = transform.position;
+				startPos.x += dir * renderer.bounds.size.x / 2;
+				
+				GameObject beam = 
+					Instantiate (beamPrefab, startPos, 
+					             Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
+						as GameObject;
+				beam.GetComponent<BeamPower>().SetDirection (dir);
+				beam.GetComponent<BeamPower>().SetAimTag ("Player");
+
+				speed = moveScripte.speed;
 			}
 		}
 	}

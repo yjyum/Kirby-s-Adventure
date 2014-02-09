@@ -19,8 +19,7 @@ public class MoveScoreScript : MonoBehaviour {
 		}
 
 		Vector3 pos = Camera.main.transform.position;
-		pos.y = origin.y - 3.2f;
-		pos.x += 0.6f;
+		pos.y = origin.y - 3f;
 		pos.z = 0f;
 		transform.position = pos;
 	}

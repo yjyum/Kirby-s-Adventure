@@ -48,17 +48,21 @@ public class BeamPower : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		Debug.Log("beam power on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals(aimTag)) {
-
 			if (aimTag.Equals("Enemy")) {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 				es.Reset();
+				SingletonScript.Instance.score += 100;
 			}
 
 			if (aimTag.Equals("Player")) {
+				Debug.Log(SingletonScript.Instance.kirby_life);
+				SingletonScript.Instance.kirby_life --;
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
 				es.Reset();
-				Application.LoadLevel ("Vegetable Valley 1"); // kirby Dies
+				if (SingletonScript.Instance.kirby_life % 6 == 0) {
+					Application.LoadLevel ("Vegetable Valley 1");
+				}
 			}
 		}
 	}

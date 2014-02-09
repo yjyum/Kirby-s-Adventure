@@ -30,7 +30,7 @@ public class EnemyScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Mathf.Abs(kirby.transform.position.x - transform.position.x) > cameraRange) {
+		if (Mathf.Abs(kirby.transform.position.x - transform.position.x) > cameraRange && hasSpawn == false) {
 			hasEnter = false;
 		}
 

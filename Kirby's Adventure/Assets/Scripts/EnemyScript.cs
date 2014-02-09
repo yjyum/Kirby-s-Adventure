@@ -105,7 +105,6 @@ public class EnemyScript : MonoBehaviour {
 			if (col.gameObject.tag.Equals("Player")) {
 				if (SingletonScript.Instance.kirby_animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
 					Reset();
-					SingletonScript.Instance.score += 100;
 
 					PlaySoundEffect(scoreSound, false, false, 0.4f);
 				} else { // kirby died
@@ -119,6 +118,8 @@ public class EnemyScript : MonoBehaviour {
 						Application.LoadLevel ("Vegetable Valley 1");
 					}
 				}
+
+				SingletonScript.Instance.score += 600;
 			}
 		}
 	}

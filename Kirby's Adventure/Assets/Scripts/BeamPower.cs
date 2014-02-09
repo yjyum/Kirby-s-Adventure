@@ -55,7 +55,6 @@ public class BeamPower : MonoBehaviour {
 			if (aimTag.Equals("Enemy")) {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 				es.Reset();
-				SingletonScript.Instance.score += 100;
 
 				PlaySoundEffect(scoreSound, false, false, 0.4f);
 			}
@@ -74,6 +73,8 @@ public class BeamPower : MonoBehaviour {
 					Application.LoadLevel ("Vegetable Valley 1");
 				}
 			}
+
+			SingletonScript.Instance.score += 600;
 		}
 	}
 	

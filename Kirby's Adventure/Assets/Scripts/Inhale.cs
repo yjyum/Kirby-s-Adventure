@@ -38,7 +38,7 @@ public class Inhale : MonoBehaviour {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			if (es.hasSpawn) {
 				es.Reset();
-				SingletonScript.Instance.score += 100;
+				SingletonScript.Instance.score += 300;
 
 				PlaySoundEffect(scoreSound, false, false, 0.4f);
 

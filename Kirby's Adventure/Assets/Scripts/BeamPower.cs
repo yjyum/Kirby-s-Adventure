@@ -48,6 +48,7 @@ public class BeamPower : MonoBehaviour {
 		if (col.gameObject.tag.Equals(aimTag)) {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			es.Reset();
+			SingletonScript.Instance.score += 100;
 		}
 	}
 	

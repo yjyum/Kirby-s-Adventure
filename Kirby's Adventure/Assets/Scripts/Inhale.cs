@@ -36,6 +36,7 @@ public class Inhale : MonoBehaviour {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			if (es.hasSpawn) {
 				es.Reset();
+				SingletonScript.Instance.score += 100;
 				character.GetComponent<Animator>().SetBool("withEnemy", true);
 				character.GetComponent<Animator>().SetBool("executing", false);
 				character.GetComponent<Animator>().SetFloat("powerType", 1f); //different power TODO

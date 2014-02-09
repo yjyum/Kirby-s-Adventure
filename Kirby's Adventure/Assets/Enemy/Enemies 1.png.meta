@@ -73,8 +73,26 @@ TextureImporter:
         serializedVersion: 2
         x: 95
         y: 474
-        width: 15
-        height: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemies 1_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 474
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemies 1_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 436
+        width: 3
+        height: 49
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 

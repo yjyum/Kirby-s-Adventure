@@ -4,8 +4,8 @@ using System.Collections;
 public class Inhale : MonoBehaviour {
 
 	public float 	direction;
-	public float 	inhaleWidth = 1.5f;
-	public float 	inhaleHeight = 0.5f;
+	public float 	inhaleWidth = 1f;
+	public float 	inhaleHeight = 0.7f;
 	public Vector3 	kirbyPos;
 	public Vector3	startPos;
 	public float 	updatePicTime = 0.1f; 
@@ -25,7 +25,8 @@ public class Inhale : MonoBehaviour {
 			transform.position += (kirbyPos - transform.position) * 0.4f;
 			updatePicTime = 0.1f;
 		}
-		if ((transform.position.x - kirbyPos.x) * direction < 0.1f) {
+		if ((transform.position.x - kirbyPos.x) * direction < 0.1f
+		    || !character.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("kirby_executePower")) {
 			Destroy (gameObject);
 		}
 	}
@@ -51,5 +52,10 @@ public class Inhale : MonoBehaviour {
 
 	public void SetPos(Vector3 pos) {
 		kirbyPos = pos;
+	}
+
+	public void SetRange(float w, float h) {
+		inhaleWidth = w;
+		inhaleHeight = h;
 	}
 }

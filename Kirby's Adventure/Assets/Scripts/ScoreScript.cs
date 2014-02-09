@@ -48,5 +48,10 @@ public class ScoreScript : MonoBehaviour {
 		go = GameObject.Find("score");
 		TextMesh tmm = (TextMesh) go.GetComponent(typeof(TextMesh));
 		tmm.text = SingletonScript.Instance.score.ToString();
+
+		if (SingletonScript.Instance.kirby_life == 12) {
+			SingletonScript.Instance.kirby_life = 24;
+			SingletonScript.Instance.score = 0;
+		}
 	}
 }

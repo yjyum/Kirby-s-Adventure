@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MoveScoreScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\EnemyScript.cs" Line="35" Column="4" />
-      <File FileName="Assets\Scripts\KirbyScript.cs" Line="114" Column="2" />
+      <File FileName="Assets\Scripts\EnemyScript.cs" Line="57" Column="1" />
+      <File FileName="Assets\Scripts\KirbyScript.cs" Line="345" Column="1" />
       <File FileName="Assets\Scripts\BeamPower.cs" Line="37" Column="20" />
       <File FileName="Assets\Scripts\SingletonScript.cs" Line="17" Column="1" />
-      <File FileName="Assets\Scripts\CameraFollow.cs" Line="39" Column="1" />
-      <File FileName="Assets\Scripts\MoveScoreScript.cs" Line="8" Column="3" />
+      <File FileName="Assets\Scripts\CameraFollow.cs" Line="36" Column="15" />
+      <File FileName="Assets\Scripts\MoveScoreScript.cs" Line="23" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

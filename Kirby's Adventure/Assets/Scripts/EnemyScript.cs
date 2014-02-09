@@ -54,11 +54,7 @@ public class EnemyScript : MonoBehaviour {
 		if (vel.y > 0) {
 			vel.y += jumpAcc * Time.deltaTime;
 		}
-		/*
-		if (vel.y > 30) {
-			vel.y = 0f;
-		}
-*/
+
 		rigidbody2D.velocity = vel;
 	}
 

@@ -96,8 +96,8 @@ public class KirbyScript : MonoBehaviour {
 			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
 			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
-				Debug.Log("Spawn");
-				Debug.Log(go + " Distance : " + distance);
+			//	Debug.Log("Spawn");
+			//	Debug.Log(go + " Distance : " + distance);
 				es.hasEnter = true;
 				es.Spwan ();
 			}

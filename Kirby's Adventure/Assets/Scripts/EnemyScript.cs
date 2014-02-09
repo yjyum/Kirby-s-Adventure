@@ -3,9 +3,14 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
+	public bool 		canJump = true;
+	public bool 		hasPower = true;
+	public int 			powerType = 0;
+
 	public bool 		hasSpawn = false;
 	public bool 		hasEnter = false;
 
+	private float 		speed;
 	private float		jumpSpeed = 4f;
 	private float		jumpAcc = 3f;
 	private MoveScript	moveScripte;
@@ -28,6 +33,7 @@ public class EnemyScript : MonoBehaviour {
 		transform.localScale = new Vector3 (0, 0, 0);
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
+		speed = moveScripte.speed;
 		InvokeRepeating("EnemyAttack", 0f, 1.8f);
 	}
 
@@ -44,7 +50,7 @@ public class EnemyScript : MonoBehaviour {
 			}
 
 			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= enemyAttackDis) {
-				Debug.Log(this + "attack kirby");
+			//	Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
 		}
@@ -54,12 +60,11 @@ public class EnemyScript : MonoBehaviour {
 			if (beamTime <= 0) {
 				beamTime = 1f;
 				executing = false;
+				moveScripte.speed = speed;
 			} else {
-				Debug.Log ("enemy executs power");
+			//	Debug.Log ("enemy executs power");
 				moveScripte.speed = 0f;
 			}
-		} else {
-			moveScripte.speed = -1.5f;
 		}
 	}
 
@@ -115,13 +120,14 @@ public class EnemyScript : MonoBehaviour {
 	private void EnemyAttack() {
 		if (hasSpawn) {
 			float action = Random.Range(0f, 10f)*10%2;
-			//Debug.Log (action);
 
-			if (action >= 1) {
+			if (action >= 1 && canJump) {
 				Vector2 vel = rigidbody2D.velocity;
 				vel.y = jumpSpeed;
 				rigidbody2D.velocity = vel;
-			} else {
+			} 
+
+			if (action < 1 && hasPower){
 				executing = true;
 
 				float dir = -Mathf.Sign (transform.localScale.x);
@@ -134,6 +140,8 @@ public class EnemyScript : MonoBehaviour {
 						as GameObject;
 				beam.GetComponent<BeamPower>().SetDirection (dir);
 				beam.GetComponent<BeamPower>().SetAimTag ("Player");
+
+				speed = moveScripte.speed;
 			}
 		}
 	}

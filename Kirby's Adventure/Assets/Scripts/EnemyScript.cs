@@ -5,18 +5,21 @@ public class EnemyScript : MonoBehaviour {
 
 	public bool 		hasSpawn = false;
 	public bool 		hasEnter = false;
-	public GameObject	beamPrefab;
 
-	private float		jumpSpeed = 15f;
-	private float		jumpAcc = 0.5f;
+	private float		jumpSpeed = 4f;
+	private float		jumpAcc = 3f;
 	private MoveScript	moveScripte;
 	private GameObject 	kirby;
 	private Vector3 	originalPosition;
 	private float 		enemyScale = 4f;
+	private float		beamTime = 0.8f;
+	private bool		executing = false;
 
 	//public Transform kirby;
 	public int cameraRange = 6;
 	public static float enemyAttackDis = 2.5f;
+
+	public GameObject	beamPrefab;
 
 	void Awake() {
 		moveScripte = GetComponent<MoveScript> ();
@@ -25,7 +28,7 @@ public class EnemyScript : MonoBehaviour {
 		transform.localScale = new Vector3 (0, 0, 0);
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
-		InvokeRepeating("EnemyAttack", 5, 1);
+		InvokeRepeating("EnemyAttack", 0f, 1.8f);
 	}
 
 	// Update is called once per frame
@@ -44,7 +47,19 @@ public class EnemyScript : MonoBehaviour {
 				Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
+		}
 
+		if (executing) {
+			beamTime -= Time.deltaTime;
+			if (beamTime <= 0) {
+				beamTime = 1f;
+				executing = false;
+			} else {
+				Debug.Log ("enemy executs power");
+				moveScripte.speed = 0f;
+			}
+		} else {
+			moveScripte.speed = -1.5f;
 		}
 	}
 
@@ -107,7 +122,18 @@ public class EnemyScript : MonoBehaviour {
 				vel.y = jumpSpeed;
 				rigidbody2D.velocity = vel;
 			} else {
+				executing = true;
 
+				float dir = -Mathf.Sign (transform.localScale.x);
+				Vector3 startPos = transform.position;
+				startPos.x += dir * renderer.bounds.size.x / 2;
+				
+				GameObject beam = 
+					Instantiate (beamPrefab, startPos, 
+					             Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
+						as GameObject;
+				beam.GetComponent<BeamPower>().SetDirection (dir);
+				beam.GetComponent<BeamPower>().SetAimTag ("Player");
 			}
 		}
 	}

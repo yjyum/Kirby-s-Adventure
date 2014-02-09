@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MoveScript : MonoBehaviour {
 
-	public float		speed = -2;
+	public float		speed = -1.5f;
 
 	// Use this for initialization
 	void Start () {

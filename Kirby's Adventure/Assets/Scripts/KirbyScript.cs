@@ -138,6 +138,16 @@ public class KirbyScript : MonoBehaviour {
 			GameObject inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetRange (0.1f, 0f);
+
+			inh = Instantiate (inhalePrefab) as GameObject;
+			inh.GetComponent<Inhale>().SetDirection (dir);
+			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetRange (0.5f , 0.2f);
+
+			inh = Instantiate (inhalePrefab) as GameObject;
+			inh.GetComponent<Inhale>().SetDirection (dir);
+			inh.GetComponent<Inhale>().SetPos (startPos);
 			
 			inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
@@ -302,6 +312,24 @@ public class KirbyScript : MonoBehaviour {
 				vel.y = 0f;
 			}
 			animator.SetBool("jump", false);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (grounded) {
+				vel.y = jumpSpeed;
+			}
+		}
+		
+		if (Input.GetKey (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (!grounded && vel.y > 0) {
+				vel.y += jumpAcc * Time.deltaTime;
+			}
+		}
+		
+		if (Input.GetKeyUp (KeyCode.Z) && animator.GetBool("withEnemy")) {
+			if (!grounded && vel.y > 0) {
+				vel.y = 0f;
+			}
 		}
 	}
 	#endregion

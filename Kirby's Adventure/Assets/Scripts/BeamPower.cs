@@ -7,7 +7,11 @@ public class BeamPower : MonoBehaviour {
 	public float 			direction;
 	public float 			rotateSpeed = 5f;
 	public float 			timeRemaining = 0.5f;
-	
+
+	public AudioClip 		scoreSound;
+	public AudioClip 		loseBloodSound;
+	public AudioClip		loseLifeSound;
+
 	void Start() {
 		if (direction < 0) {
 			Vector3 face = transform.localScale;
@@ -52,6 +56,8 @@ public class BeamPower : MonoBehaviour {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 				es.Reset();
 				SingletonScript.Instance.score += 100;
+
+				PlaySoundEffect(scoreSound, false, false, 0.4f);
 			}
 
 			if (aimTag.Equals("Player")) {
@@ -60,7 +66,11 @@ public class BeamPower : MonoBehaviour {
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
 				es.Reset();
+
+				PlaySoundEffect(loseBloodSound, false, false, 0.4f);
+
 				if (SingletonScript.Instance.kirby_life % 6 == 0) {
+					PlaySoundEffect(loseLifeSound, false, false, 0.4f);
 					Application.LoadLevel ("Vegetable Valley 1");
 				}
 			}
@@ -73,5 +83,20 @@ public class BeamPower : MonoBehaviour {
 
 	public void SetAimTag(string aim) {
 		aimTag = aim;
+	}
+
+	public void SetAudio(AudioClip score, AudioClip loseBlood, AudioClip loseLife) {
+		scoreSound = score;
+		loseBloodSound = loseBlood;
+		loseLifeSound = loseLife;
+	}
+
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
 	}
 }

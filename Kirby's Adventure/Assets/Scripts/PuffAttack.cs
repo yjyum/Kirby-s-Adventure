@@ -6,6 +6,7 @@ public class PuffAttack : MonoBehaviour {
 	public float 	direction;
 	public float 	force = 300f;
 	public float 	timeRemaining = 0.2f;
+	public AudioClip 		scoreSound;
 
 	void Start() {
 		rigidbody2D.AddForce (new Vector2 (force * direction, 0));
@@ -31,11 +32,26 @@ public class PuffAttack : MonoBehaviour {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			es.Reset();
 			SingletonScript.Instance.score += 100;
+			PlaySoundEffect(scoreSound, false, false, 0.4f);
+
 		}
 		Destroy (gameObject);
 	}
 
 	public void SetDirection(float dir) {
 		direction = dir;
+	}
+
+	public void SetAudio(AudioClip score) {
+		scoreSound = score;
+	}
+
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
 	}
 }

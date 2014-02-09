@@ -10,6 +10,9 @@ public class EnemyScript : MonoBehaviour {
 	public bool 		hasSpawn = false;
 	public bool 		hasEnter = false;
 
+	public AudioClip 		scoreSound;
+	public AudioClip 		loseBloodSound;
+
 	private float 		speed;
 	private float		jumpSpeed = 4f;
 	private float		jumpAcc = 3f;
@@ -103,10 +106,15 @@ public class EnemyScript : MonoBehaviour {
 				if (SingletonScript.Instance.kirby_animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {//slide attack
 					Reset();
 					SingletonScript.Instance.score += 100;
+
+					PlaySoundEffect(scoreSound, false, false, 0.4f);
 				} else { // kirby died
 					Debug.Log(SingletonScript.Instance.kirby_life);
 					SingletonScript.Instance.kirby_life --;
 					Reset();
+
+					PlaySoundEffect(loseBloodSound, false, false, 0.4f);
+
 					if (SingletonScript.Instance.kirby_life % 6 == 0) {
 						Application.LoadLevel ("Vegetable Valley 1");
 					}
@@ -149,5 +157,14 @@ public class EnemyScript : MonoBehaviour {
 				speed = moveScripte.speed;
 			}
 		}
+	}
+
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
 	}
 }

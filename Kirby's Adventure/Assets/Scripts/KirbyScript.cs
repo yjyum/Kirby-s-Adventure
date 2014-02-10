@@ -35,6 +35,19 @@ public class KirbyScript : MonoBehaviour {
 	// animator.powerType; 
 	// 0:inhale	 1: beam 	2: spark	2:fire
 
+	// kirby audio source
+	public AudioClip jumpSound;
+	public AudioClip inhaleSound;
+	public AudioClip beamSound;
+	public AudioClip flySound;
+	public AudioClip loseBloodSound;
+	public AudioClip loseLifeSound;
+	public AudioClip gameOverSound;
+	public AudioClip starSound;
+	public AudioClip puffSound;
+	public AudioClip slideSound;
+	public AudioClip scoreSound;
+
 	private Animator 	animator;
 
 	// Use this for initialization
@@ -47,48 +60,57 @@ public class KirbyScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		float horizontal = Input.GetAxis ("Horizontal");
-//		float vertical = Input.GetAxis ("Vertical");
-		
-		Vector2 vel = rigidbody2D.velocity;
-
-		if (animator.GetBool("withAir")) {
-			rigidbody2D.gravityScale = flyGravity;
-			horSpeed = flySpeed;
-			vel.y = -fallSpeed; 
+		if (transform.position.y < 4f) {
+			PlaySoundEffect (loseLifeSound, false, false, 0.4f);
+			SingletonScript.Instance.kirby_life --;
+			Vector3 pos = transform.position;
+			pos.y += 3;
+			transform.position = pos;
 		} else {
-			rigidbody2D.gravityScale = normalGravity;
-			horSpeed = walkSpeed;
-		}
+			float horizontal = Input.GetAxis ("Horizontal");
+		
+			Vector2 vel = rigidbody2D.velocity;
 
-		LeftRightCommand (ref vel);
-		UpCommand (ref vel);
-		DownCommand (ref vel);
-		ZCommand (ref vel);
-		XCommand (ref vel);
-		
-		// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_walk")) {
-			if ((Input.GetKeyDown(KeyCode.RightArrow) && vel.x > 0)
-			    ||(Input.GetKeyDown(KeyCode.LeftArrow) && vel.x < 0)) {
-				vel.x = horizontal * dashSpeed;
-				animator.SetBool("dash", true);
+			if (animator.GetBool ("withAir")) {
+				rigidbody2D.gravityScale = flyGravity;
+				horSpeed = flySpeed;
+				vel.y = -fallSpeed; 
+			} else {
+				rigidbody2D.gravityScale = normalGravity;
+				horSpeed = walkSpeed;
 			}
-		}
 		
-		// "DOWN" + "Z"/"X" command: slide attack
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_duck")) {
-			animator.SetBool("slide", false);
-			if (Input.GetKeyDown(KeyCode.Z)
-			    ||Input.GetKeyDown(KeyCode.X)) {
-				animator.SetBool("slide", true);
+			LeftRightCommand (ref vel);
+			UpCommand (ref vel);
+			DownCommand (ref vel);
+			ZCommand (ref vel);
+			XCommand (ref vel);
+		
+			// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_walk")) {
+				if ((Input.GetKeyDown (KeyCode.RightArrow) && vel.x > 0)
+					|| (Input.GetKeyDown (KeyCode.LeftArrow) && vel.x < 0)) {
+					vel.x = horizontal * dashSpeed;
+					animator.SetBool ("dash", true);
+				}
 			}
-		}
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {
-			vel.x = transform.localScale.x * slideSpeed;
-		}
 		
-		rigidbody2D.velocity = vel;
+			// "DOWN" + "Z"/"X" command: slide attack
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_duck")) {
+				animator.SetBool ("slide", false);
+				if (Input.GetKeyDown (KeyCode.Z)
+					|| Input.GetKeyDown (KeyCode.X)) {
+					animator.SetBool ("slide", true);
+				}
+			}
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_slideAttack")) {
+				vel.x = transform.localScale.x * slideSpeed;
+
+				PlaySoundEffect (slideSound, false, false, 0.4f);
+			}
+		
+			rigidbody2D.velocity = vel;
+		}
 	}
 
 	void FixedUpdate () {
@@ -96,7 +118,7 @@ public class KirbyScript : MonoBehaviour {
 		GameObject[] gos = GameObject.FindGameObjectsWithTag("Enemy"); 
 		
 		foreach (GameObject go in gos) {
-			float distance = Mathf.Abs(transform.position.x - go.transform.position.x);
+			float distance = Mathf.Abs(transform.position.x/2.5f - go.transform.position.x/4f);
 			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
 			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
@@ -120,7 +142,14 @@ public class KirbyScript : MonoBehaviour {
 
 	}
 
-
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
+	}
 
 	#region AttackFunction
 	void inhale() {	
@@ -134,20 +163,26 @@ public class KirbyScript : MonoBehaviour {
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
 			inh.GetComponent<Inhale>().SetRange (0.1f, 0f);
+			inh.GetComponent<Inhale>().SetAudio (scoreSound);
 
 			inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
 			inh.GetComponent<Inhale>().SetRange (0.5f , 0.2f);
+			inh.GetComponent<Inhale>().SetAudio (scoreSound);
 
 			inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetAudio (scoreSound);
 			
 			inh = Instantiate (inhalePrefab) as GameObject;
 			inh.GetComponent<Inhale>().SetDirection (dir);
 			inh.GetComponent<Inhale>().SetPos (startPos);
+			inh.GetComponent<Inhale>().SetAudio (scoreSound);
 			inhaleInterval = 0.1f;
+
+			PlaySoundEffect(inhaleSound, false, false, 0.4f);
 		}
 	}
 
@@ -161,8 +196,11 @@ public class KirbyScript : MonoBehaviour {
 		GameObject star = 
 			Instantiate (starPrefab, startPos, transform.rotation) as GameObject;
 		star.GetComponent<StarPower>().SetDirection (dir);
+		star.GetComponent<StarPower>().SetAudio (scoreSound);
 
 		animator.SetFloat ("powerType", 0f);
+
+		PlaySoundEffect(starSound, false, false, 0.4f);
 	}
 
 	void puffAttack() {
@@ -176,6 +214,9 @@ public class KirbyScript : MonoBehaviour {
 			Instantiate (puffPrefab, startPos, transform.rotation) 
 			as GameObject;
 		puff.GetComponent<PuffAttack>().SetDirection (dir);
+		puff.GetComponent<PuffAttack>().SetAudio (scoreSound);
+
+		PlaySoundEffect(puffSound, false, false, 0.4f);
 	}
 
 	void beamPower(){
@@ -191,6 +232,9 @@ public class KirbyScript : MonoBehaviour {
 			as GameObject;
 		beam.GetComponent<BeamPower>().SetDirection (dir);
 		beam.GetComponent<BeamPower>().SetAimTag ("Enemy");
+		beam.GetComponent<BeamPower>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
+
+		PlaySoundEffect(beamSound, false, false, 0.4f);
 	}
 
 	void sparkPower(){
@@ -280,6 +324,8 @@ public class KirbyScript : MonoBehaviour {
 			vel.y = vertical * flySpeed;		
 			animator.SetBool ("withAir", true);
 			animator.speed = 3;
+
+			PlaySoundEffect(flySound, false, false, 0.4f);
 		} else {
 			animator.speed = 1;
 		}
@@ -323,6 +369,8 @@ public class KirbyScript : MonoBehaviour {
 				vel.y = jumpSpeed;
 				animator.speed = 0;
 				animator.SetBool("jump", true);
+
+				PlaySoundEffect(jumpSound, false, false, 0.4f);
 			}
 		}
 
@@ -351,6 +399,7 @@ public class KirbyScript : MonoBehaviour {
 			if (grounded) {
 				vel.y = jumpSpeed;
 			}
+			PlaySoundEffect(jumpSound, false, false, 0.4f);
 		}
 		
 		if (Input.GetKey (KeyCode.Z) && animator.GetBool("withEnemy")) {

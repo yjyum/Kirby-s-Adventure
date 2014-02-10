@@ -10,6 +10,7 @@ public class Inhale : MonoBehaviour {
 	public Vector3	startPos;
 	public float 	updatePicTime = 0.1f; 
 	public GameObject	character;
+	public AudioClip 		scoreSound;
 
 	void Start() {
 		character = GameObject.FindWithTag ("Player");
@@ -37,7 +38,10 @@ public class Inhale : MonoBehaviour {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			if (es.hasSpawn) {
 				es.Reset();
-				SingletonScript.Instance.score += 100;
+				SingletonScript.Instance.score += 300;
+
+				PlaySoundEffect(scoreSound, false, false, 0.4f);
+
 				character.GetComponent<Animator>().SetBool("withEnemy", true);
 				character.GetComponent<Animator>().SetBool("executing", false);
 				character.GetComponent<Animator>().SetFloat("powerType", es.powerType); //different power TODO
@@ -57,5 +61,18 @@ public class Inhale : MonoBehaviour {
 	public void SetRange(float w, float h) {
 		inhaleWidth = w;
 		inhaleHeight = h;
+	}
+
+	public void SetAudio(AudioClip score) {
+		scoreSound = score;
+	}
+
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
 	}
 }

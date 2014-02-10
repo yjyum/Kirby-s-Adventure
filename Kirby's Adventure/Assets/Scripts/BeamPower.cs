@@ -7,7 +7,11 @@ public class BeamPower : MonoBehaviour {
 	public float 			direction;
 	public float 			rotateSpeed = 5f;
 	public float 			timeRemaining = 0.5f;
-	
+
+	public AudioClip 		scoreSound;
+	public AudioClip 		loseBloodSound;
+	public AudioClip		loseLifeSound;
+
 	void Start() {
 		if (direction < 0) {
 			Vector3 face = transform.localScale;
@@ -50,11 +54,17 @@ public class BeamPower : MonoBehaviour {
 		if (col.gameObject.tag.Equals(aimTag)) {
 			if (aimTag.Equals("Enemy")) {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
+
+				if (es.hasSpawn) {
+					PlaySoundEffect(scoreSound, false, false, 0.4f);
+					SingletonScript.Instance.score += 600;
+				}
+
 				es.Reset();
-				SingletonScript.Instance.score += 100;
 			}
 
 			if (aimTag.Equals("Player")) {
+<<<<<<< HEAD
 				Debug.Log(SingletonScript.Instance.kirby_life);
 				SingletonScript.Instance.kirby_life --;
 				SingletonScript.Instance.kirby_animator.Play("kirby_revive");
@@ -62,13 +72,25 @@ public class BeamPower : MonoBehaviour {
 				SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
 				SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
 				SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
+=======
+				//Debug.Log(SingletonScript.Instance.kirby_life);
+>>>>>>> 261e5557a51e013fcc64d200d720f1f2de19c695
 
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
-				es.Reset();
-				if (SingletonScript.Instance.kirby_life % 6 == 0) {
-					Application.LoadLevel ("Vegetable Valley 1");
+				if (es.hasSpawn) {
+					SingletonScript.Instance.kirby_life --;
+					es.Reset();
 				}
+
+				PlaySoundEffect(loseBloodSound, false, false, 0.4f);
+
+				if (SingletonScript.Instance.kirby_life % 6 == 0) {
+					PlaySoundEffect(loseLifeSound, false, false, 0.4f);
+					Application.LoadLevel (Application.loadedLevel);
+				}
+
+				SingletonScript.Instance.score += 600;
 			}
 		}
 	}
@@ -79,5 +101,20 @@ public class BeamPower : MonoBehaviour {
 
 	public void SetAimTag(string aim) {
 		aimTag = aim;
+	}
+
+	public void SetAudio(AudioClip score, AudioClip loseBlood, AudioClip loseLife) {
+		scoreSound = score;
+		loseBloodSound = loseBlood;
+		loseLifeSound = loseLife;
+	}
+
+	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
 	}
 }

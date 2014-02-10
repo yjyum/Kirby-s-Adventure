@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: f010554012f649a40a698795a9311e18
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreSound: {instanceID: 0}
+  - loseBloodSound: {instanceID: 0}
+  - beamSound: {instanceID: 0}
+  - loseLifeSound: {instanceID: 0}
+  - beamPrefab: {fileID: 100000, guid: a221205c529d6e64cbf3541dff877ee2, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

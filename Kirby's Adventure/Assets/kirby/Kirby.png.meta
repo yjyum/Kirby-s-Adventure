@@ -225,7 +225,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 115
-        y: 4374
+        y: 4375
         width: 41
         height: 42
       alignment: 0
@@ -234,16 +234,16 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 173
-        y: 4372
+        y: 4374
         width: 42
-        height: 44
+        height: 43
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_29
       rect:
         serializedVersion: 2
         x: 222
-        y: 4374
+        y: 4375
         width: 43
         height: 42
       alignment: 0
@@ -251,10 +251,10 @@ TextureImporter:
     - name: Kirby_30
       rect:
         serializedVersion: 2
-        x: 281
+        x: 279
         y: 4374
-        width: 40
-        height: 42
+        width: 43
+        height: 43
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_31
@@ -296,9 +296,9 @@ TextureImporter:
     - name: Kirby_35
       rect:
         serializedVersion: 2
-        x: 11
+        x: 10
         y: 4319
-        width: 28
+        width: 29
         height: 28
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -323,18 +323,18 @@ TextureImporter:
     - name: Kirby_39
       rect:
         serializedVersion: 2
-        x: 111
+        x: 109
         y: 4319
-        width: 41
+        width: 43
         height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_41
       rect:
         serializedVersion: 2
-        x: 171
+        x: 169
         y: 4319
-        width: 41
+        width: 43
         height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -378,9 +378,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 423
-        y: 4319
+        y: 4318
         width: 30
-        height: 40
+        height: 41
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_48
@@ -530,10 +530,10 @@ TextureImporter:
     - name: Kirby_71
       rect:
         serializedVersion: 2
-        x: 11
+        x: 9
         y: 4158
-        width: 41
-        height: 39
+        width: 43
+        height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Kirby_72

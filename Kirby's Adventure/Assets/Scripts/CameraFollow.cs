@@ -33,7 +33,7 @@ public class CameraFollow : MonoBehaviour {
 		if (pos.y < screenEdgeBotton) {
 			pos.y = screenEdgeBotton;
 		}
-		pos.y -= 1f;
+		pos.y -= 1.5f;
 		transform.position = pos;
 	}
 }

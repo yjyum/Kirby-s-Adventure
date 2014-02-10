@@ -60,11 +60,14 @@ public class BeamPower : MonoBehaviour {
 			}
 
 			if (aimTag.Equals("Player")) {
-				Debug.Log(SingletonScript.Instance.kirby_life);
-				SingletonScript.Instance.kirby_life --;
+				//Debug.Log(SingletonScript.Instance.kirby_life);
+
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
-				es.Reset();
+				if (es.hasSpawn) {
+					SingletonScript.Instance.kirby_life --;
+					es.Reset();
+				}
 
 				PlaySoundEffect(loseBloodSound, false, false, 0.4f);
 

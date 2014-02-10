@@ -350,6 +350,7 @@ public class KirbyScript : MonoBehaviour {
 			if (grounded) {
 				vel.y = jumpSpeed;
 			}
+			PlaySoundEffect(jumpSound, false, false, 0.4f);
 		}
 		
 		if (Input.GetKey (KeyCode.Z) && animator.GetBool("withEnemy")) {

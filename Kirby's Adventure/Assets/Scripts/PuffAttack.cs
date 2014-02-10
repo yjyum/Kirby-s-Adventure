@@ -30,10 +30,12 @@ public class PuffAttack : MonoBehaviour {
 		Debug.Log("puff attack on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals("Enemy")) {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
-			es.Reset();
-			SingletonScript.Instance.score += 100;
 
-			PlaySoundEffect(scoreSound, false, false, 0.4f);
+			if (es.hasSpawn) {
+				SingletonScript.Instance.score += 100;
+				es.Reset();
+				PlaySoundEffect(scoreSound, false, false, 0.4f);
+			}
 		}
 		Destroy (gameObject);
 	}

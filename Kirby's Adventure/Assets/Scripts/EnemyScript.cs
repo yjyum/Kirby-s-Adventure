@@ -10,8 +10,10 @@ public class EnemyScript : MonoBehaviour {
 	public bool 		hasSpawn = false;
 	public bool 		hasEnter = false;
 
-	public AudioClip 		scoreSound;
-	public AudioClip 		loseBloodSound;
+	public AudioClip 	scoreSound;
+	public AudioClip 	loseBloodSound;
+	public AudioClip 	beamSound;
+	public AudioClip 	loseLifeSound;
 
 	private float 		speed;
 	private float		jumpSpeed = 4f;
@@ -154,6 +156,9 @@ public class EnemyScript : MonoBehaviour {
 						as GameObject;
 				beam.GetComponent<BeamPower>().SetDirection (dir);
 				beam.GetComponent<BeamPower>().SetAimTag ("Player");
+				beam.GetComponent<BeamPower>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
+
+				PlaySoundEffect(beamSound, false, false, 0.4f);
 
 				speed = moveScripte.speed;
 			}

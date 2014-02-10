@@ -15,10 +15,13 @@ public class StarPower : MonoBehaviour {
 		Debug.Log("star power on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals("Enemy")) {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
-			es.Reset();
-			SingletonScript.Instance.score += 600;
 
-			PlaySoundEffect(scoreSound, false, false, 0.4f);
+			if (es.hasSpawn) {
+				SingletonScript.Instance.score += 600;
+				es.Reset();
+				PlaySoundEffect(scoreSound, false, false, 0.4f);
+			}
+
 		}
 		Destroy (gameObject);
 	}

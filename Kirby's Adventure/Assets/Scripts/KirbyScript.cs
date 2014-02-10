@@ -18,11 +18,15 @@ public class KirbyScript : MonoBehaviour {
 
 	public static float kirbyAttackDis = 1.5f;
 	public float		inhaleInterval = 0f;
+	public float		sparkInterval = 0f;
+	public float		fireInterval = 0.2f;
 
 	public GameObject	starPrefab;
 	public GameObject	puffPrefab;
 	public GameObject	beamPrefab;
+	public GameObject	sparkPrefab;
 	public GameObject	inhalePrefab;
+	public GameObject	firePrefab;
 	
 	public Vector2 		vel;
 	
@@ -188,10 +192,48 @@ public class KirbyScript : MonoBehaviour {
 		beam.GetComponent<BeamPower>().SetDirection (dir);
 		beam.GetComponent<BeamPower>().SetAimTag ("Enemy");
 	}
+
+	void sparkPower(){
+		Debug.Log ("kirby executes spark");
+
+		sparkInterval -= Time.deltaTime;
+		if (sparkInterval <= 0) {		
+			GameObject spark = 
+				Instantiate (sparkPrefab, 
+				             new Vector3(transform.position.x + (int)Random.Range(-1,2)*(renderer.bounds.size.x/2+0.2f),
+				             transform.position.y + (int)Random.Range(-1,2)*(renderer.bounds.size.x/2+0.2f),
+				             transform.position.z), 
+				             transform.rotation) as GameObject;
+			spark.GetComponent<Spark>().SetAimTag ("Enemy");
+
+			sparkInterval = 0.05f;
+		}
+	}
+
+	void firePower(){
+		Debug.Log ("kirby executes fire");
+
+		fireInterval -= Time.deltaTime;
+		if (fireInterval <= 0) {
+			float dir = Mathf.Sign (transform.localScale.x);
+			GameObject fire = 
+				Instantiate (firePrefab, 
+					         new Vector3(transform.position.x + dir*renderer.bounds.size.x/2,
+					         transform.position.y, transform.position.z), 
+					         transform.rotation) as GameObject;
+			fire.GetComponent<fire>().SetAimTag ("Enemy");
+			fire.GetComponent<fire>().SetDirection (dir);
+			fireInterval = 0.2f;
+		}
+	}
 	
 	void executeEnemyPower(float power) {
 		if (power == 1.0f) {
 			beamPower();
+		} else if (power == 2.0f) {
+			sparkPower ();
+		} else if (power == 3.0f) {
+			firePower();
 		}
 	}
 	#endregion
@@ -338,17 +380,25 @@ public class KirbyScript : MonoBehaviour {
 			} else if (animator.GetBool("withAir")) { // puff attack
 				animator.SetBool("withAir", false);
 				puffAttack();
-			} else if (!animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_duck")) { //use power
+			} else if (!animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_duck")
+			           && !animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_executePower")) { //use power
 				animator.SetBool("executing", true);
 				executeEnemyPower(animator.GetFloat("powerType"));
 				vel.x = 0;
 			}
 		} 
 		
+		//holding power: inhale, spark, fire
 		if (Input.GetKey (KeyCode.X) 
 		    && animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_executePower")) { 
-			if (animator.GetFloat("powerType") == 0f) { // inhale
+			if (animator.GetFloat("powerType") == 0f) { 
 				inhale ();
+				vel.x = 0;
+			} else if (animator.GetFloat("powerType") == 2f) {
+				sparkPower();
+				vel.x = 0;
+			} else if (animator.GetFloat("powerType") == 3f) {
+				firePower();
 				vel.x = 0;
 			}
 		}

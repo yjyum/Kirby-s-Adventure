@@ -17,7 +17,9 @@ public class EnemyScript : MonoBehaviour {
 	private GameObject 	kirby;
 	private Vector3 	originalPosition;
 	private float 		enemyScale = 4f;
-	private float		beamTime = 0.8f;
+	private float		powerTime = 0.8f;
+	private float 		sparkInterval = 0f;
+	private float		fireInterval = 0.2f;
 	private bool		executing = false;
 
 	//public Transform kirby;
@@ -25,6 +27,8 @@ public class EnemyScript : MonoBehaviour {
 	public static float enemyAttackDis = 2.5f;
 
 	public GameObject	beamPrefab;
+	public GameObject	sparkPrefab;
+	public GameObject	firePrefab;
 
 	void Awake() {
 		moveScripte = GetComponent<MoveScript> ();
@@ -56,14 +60,43 @@ public class EnemyScript : MonoBehaviour {
 		}
 
 		if (executing) {
-			beamTime -= Time.deltaTime;
-			if (beamTime <= 0) {
-				beamTime = 1f;
+			powerTime -= Time.deltaTime;
+			if (powerTime <= 0) {
+				powerTime = 1f;
 				executing = false;
 				moveScripte.speed = speed;
 			} else {
 			//	Debug.Log ("enemy executs power");
 				moveScripte.speed = 0f;
+			}
+
+			if (powerType == 2) {
+				sparkInterval -= Time.deltaTime;
+				if (sparkInterval <= 0) {
+					GameObject spark = 
+						Instantiate (sparkPrefab, 
+						             new Vector3(transform.position.x + (int)Random.Range(-1,2)*(renderer.bounds.size.x/2 + 0.2f),
+						            transform.position.y + (int)Random.Range(-1,2)*(renderer.bounds.size.x/2 + 0.2f),
+						             transform.position.z), 
+						             transform.rotation) as GameObject;
+					spark.GetComponent<Spark>().SetAimTag ("Player");
+					sparkInterval = 0.1f;
+				}
+			}
+
+			if (powerType == 3) {
+				fireInterval -= Time.deltaTime;
+				if (fireInterval <= 0) {
+					float dir = -Mathf.Sign (transform.localScale.x);
+					GameObject fire = 
+						Instantiate (firePrefab, 
+						             new Vector3(transform.position.x + dir*renderer.bounds.size.x/2,
+						             transform.position.y, transform.position.z), 
+						             transform.rotation) as GameObject;
+					fire.GetComponent<fire>().SetAimTag ("Player");
+					fire.GetComponent<fire>().SetDirection (dir);
+					fireInterval = 0.2f;
+				}
 			}
 		}
 	}
@@ -106,6 +139,11 @@ public class EnemyScript : MonoBehaviour {
 				} else { // kirby died
 					Debug.Log(SingletonScript.Instance.kirby_life);
 					SingletonScript.Instance.kirby_life --;
+					SingletonScript.Instance.kirby_animator.Play("kirby_revive");
+					SingletonScript.Instance.kirby_animator.SetBool ("withAir", false);
+					SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
+					SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
+					SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
 					Reset();
 					if (SingletonScript.Instance.kirby_life % 6 == 0) {
 						Application.LoadLevel ("Vegetable Valley 1");
@@ -138,13 +176,24 @@ public class EnemyScript : MonoBehaviour {
 				float dir = -Mathf.Sign (transform.localScale.x);
 				Vector3 startPos = transform.position;
 				startPos.x += dir * renderer.bounds.size.x / 2;
-				
-				GameObject beam = 
-					Instantiate (beamPrefab, startPos, 
-					             Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
-						as GameObject;
-				beam.GetComponent<BeamPower>().SetDirection (dir);
-				beam.GetComponent<BeamPower>().SetAimTag ("Player");
+
+				if (powerType == 1) {
+					GameObject beam = 
+						Instantiate (beamPrefab, startPos, 
+					             	Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
+							as GameObject;
+					beam.GetComponent<BeamPower>().SetDirection (dir);
+					beam.GetComponent<BeamPower>().SetAimTag ("Player");
+				} else if (powerType == 2) {
+					GameObject spark = 
+						Instantiate (sparkPrefab, transform.position, transform.rotation) as GameObject;
+					spark.GetComponent<Spark>().SetAimTag ("Player");
+				} else if (powerType == 3) {
+					GameObject fire = 
+						Instantiate (firePrefab, transform.position, transform.rotation) as GameObject;
+					fire.GetComponent<fire>().SetAimTag ("Player");
+					fire.GetComponent<fire>().SetDirection (dir);
+				}
 
 				speed = moveScripte.speed;
 			}

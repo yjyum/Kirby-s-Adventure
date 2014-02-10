@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BeamPower : MonoBehaviour {
+public class fire : MonoBehaviour {
 
-	public string 			aimTag;
-	public float 			direction;
-	public float 			rotateSpeed = 5f;
-	public float 			timeRemaining = 0.5f;
+	public float 	direction;
+	public float 	force = 200f;
+	public float 	timeRemaining = 0.3f;
+	public string 	aimTag;
 	
 	void Start() {
+		rigidbody2D.AddForce (new Vector2 (force * direction, Random.Range(-0.1f, 0.1f)));
 		if (direction < 0) {
 			Vector3 face = transform.localScale;
 			face.x *=  (-1);
@@ -16,44 +17,24 @@ public class BeamPower : MonoBehaviour {
 			transform.localScale = face;
 		}
 	}
-
+	
 	void Update() {
 		timeRemaining -= Time.deltaTime;
-
-		if (aimTag.Equals("Enemy")) {
-			GameObject kirby = GameObject.FindWithTag("Player");
-
-			Vector3 p = kirby.rigidbody2D.velocity;
-			p.x = 0;
-			kirby.rigidbody2D.velocity = p;
-
-			p = kirby.transform.position;
-			p.y = kirby.transform.position.y;
-			transform.position = p;
-		} else {
-
-		}
-		transform.Rotate (new Vector3(0, 0, -rotateSpeed * direction));
-
 		if (timeRemaining <= 0f) {
 			Destroy (gameObject);
-			if (aimTag.Equals("Enemy")) {
-				Animator anim = 
-					GameObject.FindWithTag("Player").GetComponent<Animator>();
-				anim.SetBool("executing", false);
-			}
 		}
 	}
-
+	
+	
 	void OnCollisionEnter2D(Collision2D col) {
-		Debug.Log("beam power on collision with" + col.gameObject);
+		Debug.Log("fire power on collision with" + col.gameObject);
 		if (col.gameObject.tag.Equals(aimTag)) {
 			if (aimTag.Equals("Enemy")) {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 				es.Reset();
 				SingletonScript.Instance.score += 100;
 			}
-
+			
 			if (aimTag.Equals("Player")) {
 				Debug.Log(SingletonScript.Instance.kirby_life);
 				SingletonScript.Instance.kirby_life --;
@@ -62,7 +43,6 @@ public class BeamPower : MonoBehaviour {
 				SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
 				SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
 				SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
-
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
 				es.Reset();

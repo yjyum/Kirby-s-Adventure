@@ -40,7 +40,7 @@ public class Inhale : MonoBehaviour {
 				SingletonScript.Instance.score += 100;
 				character.GetComponent<Animator>().SetBool("withEnemy", true);
 				character.GetComponent<Animator>().SetBool("executing", false);
-				character.GetComponent<Animator>().SetFloat("powerType", 1f); //different power TODO
+				character.GetComponent<Animator>().SetFloat("powerType", es.powerType); //different power TODO
 			}
 		}
 		//Destroy (gameObject);

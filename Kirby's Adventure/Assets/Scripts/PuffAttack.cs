@@ -32,8 +32,8 @@ public class PuffAttack : MonoBehaviour {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 			es.Reset();
 			SingletonScript.Instance.score += 100;
-			PlaySoundEffect(scoreSound, false, false, 0.4f);
 
+			PlaySoundEffect(scoreSound, false, false, 0.4f);
 		}
 		Destroy (gameObject);
 	}

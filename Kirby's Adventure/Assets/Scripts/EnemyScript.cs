@@ -44,17 +44,17 @@ public class EnemyScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Mathf.Abs(kirby.transform.position.x - transform.position.x) > cameraRange && hasSpawn == false) {
+		if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) > cameraRange && hasSpawn == false) {
 			hasEnter = false;
 		}
 
 		if (hasSpawn == true) {
-			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= KirbyScript.kirbyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) <= KirbyScript.kirbyAttackDis) {
 			//	Debug.Log(this + "current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
 
-			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= enemyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) <= enemyAttackDis) {
 			//	Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
@@ -85,7 +85,13 @@ public class EnemyScript : MonoBehaviour {
 
 	public void Spwan () {
 		moveScripte.enabled = true;
-		moveScripte.speed = -2f;
+
+		if (kirby.transform.position.x/2.5f <= transform.position.x/4f) {
+			moveScripte.speed = -2f;
+		} else {
+			moveScripte.speed = 2f;
+		}
+		Debug.Log ("kirby " +kirby.transform.position.x/2.5f + " enemy " +  transform.position.x/4f);
 		transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
 		hasSpawn = true;
 		collider2D.enabled = true;

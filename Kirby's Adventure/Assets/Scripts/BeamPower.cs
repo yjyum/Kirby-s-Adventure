@@ -54,9 +54,13 @@ public class BeamPower : MonoBehaviour {
 		if (col.gameObject.tag.Equals(aimTag)) {
 			if (aimTag.Equals("Enemy")) {
 				EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
-				es.Reset();
 
-				PlaySoundEffect(scoreSound, false, false, 0.4f);
+				if (es.hasSpawn) {
+					PlaySoundEffect(scoreSound, false, false, 0.4f);
+					SingletonScript.Instance.score += 600;
+				}
+
+				es.Reset();
 			}
 
 			if (aimTag.Equals("Player")) {
@@ -75,9 +79,9 @@ public class BeamPower : MonoBehaviour {
 					PlaySoundEffect(loseLifeSound, false, false, 0.4f);
 					Application.LoadLevel (Application.loadedLevel);
 				}
-			}
 
-			SingletonScript.Instance.score += 600;
+				SingletonScript.Instance.score += 600;
+			}
 		}
 	}
 	

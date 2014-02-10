@@ -114,7 +114,7 @@ public class KirbyScript : MonoBehaviour {
 		GameObject[] gos = GameObject.FindGameObjectsWithTag("Enemy"); 
 		
 		foreach (GameObject go in gos) {
-			float distance = Mathf.Abs(transform.position.x - go.transform.position.x);
+			float distance = Mathf.Abs(transform.position.x/2.5f - go.transform.position.x/4f);
 			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
 			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {

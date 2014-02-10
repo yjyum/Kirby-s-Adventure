@@ -73,7 +73,7 @@ public class BeamPower : MonoBehaviour {
 
 				if (SingletonScript.Instance.kirby_life % 6 == 0) {
 					PlaySoundEffect(loseLifeSound, false, false, 0.4f);
-					Application.LoadLevel ("Vegetable Valley 1");
+					Application.LoadLevel (Application.loadedLevel);
 				}
 			}
 

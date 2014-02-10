@@ -117,7 +117,7 @@ public class EnemyScript : MonoBehaviour {
 					PlaySoundEffect(loseBloodSound, false, false, 0.4f);
 
 					if (SingletonScript.Instance.kirby_life % 6 == 0) {
-						Application.LoadLevel ("Vegetable Valley 1");
+						Application.LoadLevel (Application.loadedLevel);
 					}
 				}
 

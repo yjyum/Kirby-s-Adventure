@@ -56,50 +56,57 @@ public class KirbyScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		float horizontal = Input.GetAxis ("Horizontal");
-//		float vertical = Input.GetAxis ("Vertical");
-		
-		Vector2 vel = rigidbody2D.velocity;
-
-		if (animator.GetBool("withAir")) {
-			rigidbody2D.gravityScale = flyGravity;
-			horSpeed = flySpeed;
-			vel.y = -fallSpeed; 
+		if (transform.position.y < 4f) {
+			PlaySoundEffect (loseLifeSound, false, false, 0.4f);
+			SingletonScript.Instance.kirby_life --;
+			Vector3 pos = transform.position;
+			pos.y += 3;
+			transform.position = pos;
 		} else {
-			rigidbody2D.gravityScale = normalGravity;
-			horSpeed = walkSpeed;
-		}
+			float horizontal = Input.GetAxis ("Horizontal");
+		
+			Vector2 vel = rigidbody2D.velocity;
 
-		LeftRightCommand (ref vel);
-		UpCommand (ref vel);
-		DownCommand (ref vel);
-		ZCommand (ref vel);
-		XCommand (ref vel);
-		
-		// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_walk")) {
-			if ((Input.GetKeyDown(KeyCode.RightArrow) && vel.x > 0)
-			    ||(Input.GetKeyDown(KeyCode.LeftArrow) && vel.x < 0)) {
-				vel.x = horizontal * dashSpeed;
-				animator.SetBool("dash", true);
+			if (animator.GetBool ("withAir")) {
+				rigidbody2D.gravityScale = flyGravity;
+				horSpeed = flySpeed;
+				vel.y = -fallSpeed; 
+			} else {
+				rigidbody2D.gravityScale = normalGravity;
+				horSpeed = walkSpeed;
 			}
-		}
 		
-		// "DOWN" + "Z"/"X" command: slide attack
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_duck")) {
-			animator.SetBool("slide", false);
-			if (Input.GetKeyDown(KeyCode.Z)
-			    ||Input.GetKeyDown(KeyCode.X)) {
-				animator.SetBool("slide", true);
+			LeftRightCommand (ref vel);
+			UpCommand (ref vel);
+			DownCommand (ref vel);
+			ZCommand (ref vel);
+			XCommand (ref vel);
+		
+			// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_walk")) {
+				if ((Input.GetKeyDown (KeyCode.RightArrow) && vel.x > 0)
+					|| (Input.GetKeyDown (KeyCode.LeftArrow) && vel.x < 0)) {
+					vel.x = horizontal * dashSpeed;
+					animator.SetBool ("dash", true);
+				}
 			}
-		}
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_slideAttack")) {
-			vel.x = transform.localScale.x * slideSpeed;
+		
+			// "DOWN" + "Z"/"X" command: slide attack
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_duck")) {
+				animator.SetBool ("slide", false);
+				if (Input.GetKeyDown (KeyCode.Z)
+					|| Input.GetKeyDown (KeyCode.X)) {
+					animator.SetBool ("slide", true);
+				}
+			}
+			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_slideAttack")) {
+				vel.x = transform.localScale.x * slideSpeed;
 
-			PlaySoundEffect(slideSound, false, false, 0.4f);
-		}
+				PlaySoundEffect (slideSound, false, false, 0.4f);
+			}
 		
-		rigidbody2D.velocity = vel;
+			rigidbody2D.velocity = vel;
+		}
 	}
 
 	void FixedUpdate () {

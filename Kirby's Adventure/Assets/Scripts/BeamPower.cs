@@ -64,17 +64,13 @@ public class BeamPower : MonoBehaviour {
 			}
 
 			if (aimTag.Equals("Player")) {
-<<<<<<< HEAD
-				Debug.Log(SingletonScript.Instance.kirby_life);
+				//Debug.Log(SingletonScript.Instance.kirby_life);
 				SingletonScript.Instance.kirby_life --;
 				SingletonScript.Instance.kirby_animator.Play("kirby_revive");
 				SingletonScript.Instance.kirby_animator.SetBool ("withAir", false);
 				SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
 				SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
 				SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
-=======
-				//Debug.Log(SingletonScript.Instance.kirby_life);
->>>>>>> 261e5557a51e013fcc64d200d720f1f2de19c695
 
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));

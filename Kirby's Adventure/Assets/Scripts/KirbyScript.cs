@@ -316,6 +316,15 @@ public class KirbyScript : MonoBehaviour {
 		//				 Pass through a doorfly 
 		float vertical = Input.GetAxis ("Vertical");
 
+		GameObject door = GameObject.FindGameObjectWithTag ("Door");
+		if (door) {
+			float distance = Mathf.Abs(door.transform.position.x-transform.position.x);
+			if (Input.GetKeyDown (KeyCode.UpArrow)
+				&& distance < 4f && transform.position.y < 7f) {
+				Application.LoadLevel("Vegetable Valley 2");
+			}
+		}
+
 		if (Input.GetKey (KeyCode.UpArrow)
 		    && !animator.GetCurrentAnimatorStateInfo(0).IsName("kirby_executePower")
 		    && !animator.GetBool ("duck")

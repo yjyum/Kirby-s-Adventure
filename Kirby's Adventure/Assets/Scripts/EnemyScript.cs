@@ -193,15 +193,17 @@ public class EnemyScript : MonoBehaviour {
 				float dir = -Mathf.Sign (transform.localScale.x);
 				Vector3 startPos = transform.position;
 				startPos.x += dir * renderer.bounds.size.x / 2;
-<<<<<<< HEAD
 
 				if (powerType == 1) {
 					GameObject beam = 
 						Instantiate (beamPrefab, startPos, 
-					             	Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
+						             Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
 							as GameObject;
 					beam.GetComponent<BeamPower>().SetDirection (dir);
 					beam.GetComponent<BeamPower>().SetAimTag ("Player");
+					beam.GetComponent<BeamPower>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
+					
+					PlaySoundEffect(beamSound, false, false, 0.4f);
 				} else if (powerType == 2) {
 					GameObject spark = 
 						Instantiate (sparkPrefab, transform.position, transform.rotation) as GameObject;
@@ -212,18 +214,6 @@ public class EnemyScript : MonoBehaviour {
 					fire.GetComponent<fire>().SetAimTag ("Player");
 					fire.GetComponent<fire>().SetDirection (dir);
 				}
-=======
-				
-				GameObject beam = 
-					Instantiate (beamPrefab, startPos, 
-					             Quaternion.Euler (dir*new Vector3(0f, 0f, 90f))) 
-						as GameObject;
-				beam.GetComponent<BeamPower>().SetDirection (dir);
-				beam.GetComponent<BeamPower>().SetAimTag ("Player");
-				beam.GetComponent<BeamPower>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
-
-				PlaySoundEffect(beamSound, false, false, 0.4f);
->>>>>>> 261e5557a51e013fcc64d200d720f1f2de19c695
 
 				speed = moveScripte.speed;
 			}

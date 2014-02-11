@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PuffAttack.cs">
     <Files>
-      <File FileName="Assets\Scripts\BeamPower.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BeamPower.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyScript.cs" Line="160" Column="5" />
+      <File FileName="Assets\Scripts\PuffAttack.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

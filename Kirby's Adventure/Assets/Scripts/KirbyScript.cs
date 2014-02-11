@@ -139,7 +139,11 @@ public class KirbyScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-
+		if (col.gameObject.tag.Equals ("Powerup")) {
+			Debug.Log("kirby on collision with" + col.gameObject);
+			SingletonScript.Instance.kirby_life ++; 
+			Destroy(col.gameObject);
+		}
 	}
 
 	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {

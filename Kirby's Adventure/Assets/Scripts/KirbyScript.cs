@@ -121,11 +121,13 @@ public class KirbyScript : MonoBehaviour {
 			float distance = Mathf.Abs(transform.position.x/2.5f - go.transform.position.x/4f);
 			//Debug.Log(go + " Distance : " + distance);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
-			if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
-			//	Debug.Log("Spawn");
-			//	Debug.Log(go + " Distance : " + distance);
-				es.hasEnter = true;
-				es.Spwan ();
+			if (es) {
+				if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
+				//	Debug.Log("Spawn");
+				//	Debug.Log(go + " Distance : " + distance);
+					es.hasEnter = true;
+					es.Spwan ();
+				}
 			}
 		}
 	}
@@ -141,7 +143,7 @@ public class KirbyScript : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		if (col.gameObject.tag.Equals ("Powerup")) {
 			Debug.Log("kirby on collision with" + col.gameObject);
-			SingletonScript.Instance.kirby_life ++; 
+			SingletonScript.Instance.score += 10000;
 			Destroy(col.gameObject);
 		}
 	}

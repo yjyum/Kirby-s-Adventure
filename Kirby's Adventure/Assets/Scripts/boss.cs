@@ -17,18 +17,14 @@ public class boss : MonoBehaviour {
 		if (Mathf.Abs(kirby.transform.position.x - transform.position.x) < attackDis) {
 			shootInterval -= Time.deltaTime;
 			if (shootInterval <= 0) {
-				if (Random.Range(-1, 4) >= 0) {
-					GameObject bullet = 
-						Instantiate (bulletPrefab, transform.position, transform.rotation)
-						as GameObject;
-				} else {
-					rigidbody2D.velocity = new Vector3(0f, 1f, 0f);
-				}
+				GameObject bullet = 
+					Instantiate (bulletPrefab, transform.position, transform.rotation)
+					as GameObject;
 				shootInterval = 2f;
 			}
 		}
 
-		if (kirby.transform.position.x > 13f) {
+		if (kirby.transform.position.x > 10f) {
 			float dir = Mathf.Sign(kirby.transform.position.x - transform.position.x);
 			rigidbody2D.velocity = new Vector3(dir, rigidbody2D.velocity.y, 0f);
 		}
@@ -54,6 +50,16 @@ public class boss : MonoBehaviour {
 			if (SingletonScript.Instance.kirby_life % 6 == 0) {
 				Application.LoadLevel (Application.loadedLevel);
 			}
+
+			Vector3 pos = col.gameObject.transform.position;
+			pos.x += Mathf.Sign(col.gameObject.transform.position.x - transform.position.x) 
+					 * renderer.bounds.size.x / 2;
+			col.gameObject.transform.position = pos;
+
+			pos = transform.position;
+			pos.x += -Mathf.Sign(col.gameObject.transform.position.x - transform.position.x) 
+				* col.gameObject.renderer.bounds.size.x / 2;
+			transform.position = pos;
 		}
 	}
 }

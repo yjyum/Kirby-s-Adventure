@@ -13,7 +13,8 @@ public class StarPower : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 		Debug.Log("star power on collision with" + col.gameObject);
-		if (col.gameObject.tag.Equals("Enemy")) {
+		if (col.gameObject.tag.Equals("Enemy")
+		    || col.gameObject.tag.Equals("boss")) {
 			EnemyScript es = (EnemyScript) col.gameObject.GetComponent(typeof(EnemyScript));
 
 			if (es.hasSpawn) {

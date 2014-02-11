@@ -46,6 +46,11 @@ public class gun : MonoBehaviour {
 			if (SingletonScript.Instance.kirby_life % 6 == 0) {
 				Application.LoadLevel (Application.loadedLevel);
 			}
+
+			Vector3 pos = col.gameObject.transform.position;
+			pos.x += Mathf.Sign(col.gameObject.transform.position.x - transform.position.x) 
+				* renderer.bounds.size.x / 2;
+			col.gameObject.transform.position = pos;
 		}
 		if (col.gameObject.layer == 12) {
 			Destroy (gameObject);

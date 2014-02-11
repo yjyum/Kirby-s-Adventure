@@ -374,5 +374,32 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: .5, y: .5}
+    - name: Enemies 1_37
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1094
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemies 1_38
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1094
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Enemies 1_39
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1094
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 

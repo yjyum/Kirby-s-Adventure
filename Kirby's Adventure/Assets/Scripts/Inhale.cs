@@ -51,7 +51,7 @@ public class Inhale : MonoBehaviour {
 
 		if (col.gameObject.tag.Equals("Powerup")) {
 			Debug.Log("inhaleParticle on collision with" + col.gameObject);
-			SingletonScript.Instance.kirby_life ++; 
+			SingletonScript.Instance.score += 10000; 
 			Destroy(col.gameObject);
 		}
 

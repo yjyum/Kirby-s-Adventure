@@ -88,6 +88,10 @@ public class KirbyScript : MonoBehaviour {
 			DownCommand (ref vel);
 			ZCommand (ref vel);
 			XCommand (ref vel);
+
+			if (Input.GetKey (KeyCode.Space) && animator.GetFloat("powerType")!=0 ) {
+				animator.SetFloat ("powerType", 0f);
+			}
 		
 			// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
 			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_walk")) {

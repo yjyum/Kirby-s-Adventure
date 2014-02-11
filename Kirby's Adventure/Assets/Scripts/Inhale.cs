@@ -74,5 +74,6 @@ public class Inhale : MonoBehaviour {
 		audio.playOnAwake = onAwake;
 		audio.volume = vol;
 		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

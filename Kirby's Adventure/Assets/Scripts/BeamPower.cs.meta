@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 283cc6985185783439776dc8ad5ee4ee
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreSound: {fileID: 8300000, guid: dba1bcda310e650408a2aa7c13104ac2, type: 3}
+  - loseBloodSound: {fileID: 8300000, guid: b4760b6d87a7a894bafd5d36af326ee6, type: 3}
+  - loseLifeSound: {fileID: 8300000, guid: 3fd4b60e5cc6b4349b2c1f0699fdc4ac, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

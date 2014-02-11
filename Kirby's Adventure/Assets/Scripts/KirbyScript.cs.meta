@@ -2,7 +2,24 @@ fileFormatVersion: 2
 guid: de93f8c35ee811745970c17596a0f937
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - starPrefab: {fileID: 100000, guid: 2b00f29781b854e4dab2c5225cd20f22, type: 2}
+  - puffPrefab: {fileID: 100000, guid: 14918a12bcd16a54db05d11dc6650934, type: 2}
+  - beamPrefab: {fileID: 100000, guid: a221205c529d6e64cbf3541dff877ee2, type: 2}
+  - sparkPrefab: {fileID: 100000, guid: 4c7e85d471c74b240bfeb8f7a220b986, type: 2}
+  - inhalePrefab: {instanceID: 0}
+  - firePrefab: {instanceID: 0}
+  - jumpSound: {instanceID: 0}
+  - inhaleSound: {instanceID: 0}
+  - beamSound: {instanceID: 0}
+  - flySound: {instanceID: 0}
+  - loseBloodSound: {instanceID: 0}
+  - loseLifeSound: {instanceID: 0}
+  - gameOverSound: {instanceID: 0}
+  - starSound: {instanceID: 0}
+  - puffSound: {instanceID: 0}
+  - slideSound: {instanceID: 0}
+  - scoreSound: {instanceID: 0}
   executionOrder: 200
   icon: {instanceID: 0}
   userData: 

@@ -19,7 +19,10 @@ public class StarPower : MonoBehaviour {
 			if (es.hasSpawn) {
 				SingletonScript.Instance.score += 600;
 				es.Reset();
-				PlaySoundEffect(scoreSound, false, false, 0.4f);
+
+				GameObject kirby = GameObject.FindWithTag("Player");
+				KirbyScript ks = (KirbyScript) kirby.GetComponent(typeof(KirbyScript));
+				ks.PlaySoundEffect(scoreSound, false, false, 0.4f);
 			}
 
 		}
@@ -32,14 +35,5 @@ public class StarPower : MonoBehaviour {
 
 	public void SetAudio(AudioClip score) {
 		scoreSound = score;
-	}
-	
-	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
-		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
-		audio.clip = clip;
-		audio.loop = loop;
-		audio.playOnAwake = onAwake;
-		audio.volume = vol;
-		audio.Play();
 	}
 }

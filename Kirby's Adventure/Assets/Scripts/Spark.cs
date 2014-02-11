@@ -6,7 +6,12 @@ public class Spark : MonoBehaviour {
 	public float 		eachTime = 0.3f; 
 	public float		totalTime = 1f;
 
+	public AudioClip 		scoreSound;
+	public AudioClip 		loseBloodSound;
+	public AudioClip		loseLifeSound;
+
 	void Start() {
+		//PlaySoundEffect(sparkSound, false, false, 0.4f);
 	}
 	
 	void Update() {
@@ -50,5 +55,21 @@ public class Spark : MonoBehaviour {
 
 	public void SetAimTag(string aim) {
 		aimTag = aim;
+	}
+
+	public void SetAudio(AudioClip score, AudioClip loseBlood, AudioClip loseLife) {
+		scoreSound = score;
+		loseBloodSound = loseBlood;
+		loseLifeSound = loseLife;
+	}
+	
+	public void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

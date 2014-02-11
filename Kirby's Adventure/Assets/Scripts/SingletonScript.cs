@@ -22,4 +22,8 @@ public class SingletonScript : MonoBehaviour {
 
 	}
 
+	void Update () {
+
+	}
+
 }

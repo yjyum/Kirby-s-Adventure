@@ -65,7 +65,6 @@ public class BeamPower : MonoBehaviour {
 
 			if (aimTag.Equals("Player")) {
 				//Debug.Log(SingletonScript.Instance.kirby_life);
-				SingletonScript.Instance.kirby_life --;
 				SingletonScript.Instance.kirby_animator.Play("kirby_revive");
 				SingletonScript.Instance.kirby_animator.SetBool ("withAir", false);
 				SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
@@ -76,17 +75,18 @@ public class BeamPower : MonoBehaviour {
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
 				if (es.hasSpawn) {
 					SingletonScript.Instance.kirby_life --;
-					es.Reset();
+
+					GameObject kirby = GameObject.FindWithTag("Player");
+					KirbyScript ks = (KirbyScript) kirby.GetComponent(typeof(KirbyScript));
+
+					if (SingletonScript.Instance.kirby_life % 6 == 0) {
+						ks.PlaySoundEffect(loseLifeSound, false, false, 0.4f);
+						Application.LoadLevel (Application.loadedLevel);
+					}else {
+						ks.PlaySoundEffect(loseBloodSound, false, false, 0.4f);
+					}
+					Destroy(gameObject);
 				}
-
-				PlaySoundEffect(loseBloodSound, false, false, 0.4f);
-
-				if (SingletonScript.Instance.kirby_life % 6 == 0) {
-					PlaySoundEffect(loseLifeSound, false, false, 0.4f);
-					Application.LoadLevel (Application.loadedLevel);
-				}
-
-				SingletonScript.Instance.score += 600;
 			}
 		}
 	}
@@ -112,5 +112,6 @@ public class BeamPower : MonoBehaviour {
 		audio.playOnAwake = onAwake;
 		audio.volume = vol;
 		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

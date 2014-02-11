@@ -7,6 +7,10 @@ public class fire : MonoBehaviour {
 	public float 	force = 200f;
 	public float 	timeRemaining = 0.3f;
 	public string 	aimTag;
+
+	public AudioClip 		scoreSound;
+	public AudioClip 		loseBloodSound;
+	public AudioClip		loseLifeSound;
 	
 	void Start() {
 		rigidbody2D.AddForce (new Vector2 (force * direction, Random.Range(-0.1f, 0.1f)));
@@ -59,5 +63,21 @@ public class fire : MonoBehaviour {
 
 	public void SetAimTag(string aim) {
 		aimTag = aim;
+	}
+
+	public void SetAudio(AudioClip score, AudioClip loseBlood, AudioClip loseLife) {
+		scoreSound = score;
+		loseBloodSound = loseBlood;
+		loseLifeSound = loseLife;
+	}
+	
+	public void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

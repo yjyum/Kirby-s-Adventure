@@ -47,6 +47,9 @@ public class KirbyScript : MonoBehaviour {
 	public AudioClip puffSound;
 	public AudioClip slideSound;
 	public AudioClip scoreSound;
+	public AudioClip doorSound;
+	public AudioClip sparkSound;
+	public AudioClip fireSound;
 
 	private Animator 	animator;
 
@@ -85,6 +88,12 @@ public class KirbyScript : MonoBehaviour {
 			DownCommand (ref vel);
 			ZCommand (ref vel);
 			XCommand (ref vel);
+
+			if (Input.GetKey (KeyCode.Space) 
+			    && !animator.GetBool("withEnemy")
+			    && animator.GetFloat("powerType")!=0 ) {
+				animator.SetFloat ("powerType", 0f);
+			}
 		
 			// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
 			if (animator.GetCurrentAnimatorStateInfo (0).IsName ("kirby_walk")) {
@@ -118,16 +127,13 @@ public class KirbyScript : MonoBehaviour {
 		GameObject[] gos = GameObject.FindGameObjectsWithTag("Enemy"); 
 		
 		foreach (GameObject go in gos) {
-			float distance = Mathf.Abs(transform.position.x/2.5f - go.transform.position.x/4f);
-			//Debug.Log(go + " Distance : " + distance);
+			float distance = Mathf.Abs(transform.position.x - go.transform.position.x);
+			//Debug.Log(go + " Distance : " + distance + go);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
-			if (es) {
-				if (distance <= cameraRange && es.hasSpawn == false && es.hasEnter == false) {
-				//	Debug.Log("Spawn");
-				//	Debug.Log(go + " Distance : " + distance);
-					es.hasEnter = true;
-					es.Spwan ();
-				}
+
+			if (es && es.hasSpawn == false && distance > 6f) {
+			//	Debug.Log("Spawn");
+				es.Spwan ();
 			}
 		}
 	}
@@ -148,13 +154,14 @@ public class KirbyScript : MonoBehaviour {
 		}
 	}
 
-	void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+	public void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
 		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
 		audio.clip = clip;
 		audio.loop = loop;
 		audio.playOnAwake = onAwake;
 		audio.volume = vol;
 		audio.Play();
+		Destroy(audio, clip.length);
 	}
 
 	#region AttackFunction
@@ -255,8 +262,10 @@ public class KirbyScript : MonoBehaviour {
 				             transform.position.z), 
 				             transform.rotation) as GameObject;
 			spark.GetComponent<Spark>().SetAimTag ("Enemy");
-
+			spark.GetComponent<Spark>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
 			sparkInterval = 0.05f;
+
+			PlaySoundEffect(sparkSound, false, false, 0.4f);
 		}
 	}
 
@@ -273,7 +282,10 @@ public class KirbyScript : MonoBehaviour {
 					         transform.rotation) as GameObject;
 			fire.GetComponent<fire>().SetAimTag ("Enemy");
 			fire.GetComponent<fire>().SetDirection (dir);
+			fire.GetComponent<fire>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
 			fireInterval = 0.2f;
+
+			PlaySoundEffect(fireSound, false, false, 0.4f);
 		}
 	}
 	
@@ -327,6 +339,7 @@ public class KirbyScript : MonoBehaviour {
 			float distance = Mathf.Abs(door.transform.position.x-transform.position.x);
 			if (Input.GetKeyDown (KeyCode.UpArrow)
 				&& distance < 4f && transform.position.y < 7f) {
+				PlaySoundEffect (doorSound, false, false, 0.4f);
 				Application.LoadLevel("Vegetable Valley 2");
 			}
 		}

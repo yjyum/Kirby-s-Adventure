@@ -8,15 +8,16 @@ public class EnemyScript : MonoBehaviour {
 	public int 			powerType = 0;
 
 	public bool 		hasSpawn = false;
-	public bool 		hasEnter = false;
 
 	public AudioClip 	scoreSound;
 	public AudioClip 	loseBloodSound;
 	public AudioClip 	beamSound;
 	public AudioClip 	loseLifeSound;
-
+	public AudioClip 	sparkSound;
+	public AudioClip 	fireSound;
+	
 	private float 		speed;
-	private float		jumpSpeed = 4f;
+	private float		jumpSpeed = 5f;
 	private float		jumpAcc = 3f;
 	private MoveScript	moveScripte;
 	private GameObject 	kirby;
@@ -26,9 +27,10 @@ public class EnemyScript : MonoBehaviour {
 	private float 		sparkInterval = 0f;
 	private float		fireInterval = 0.2f;
 	private bool		executing = false;
+	public float 		kirbyScale = 2.5f;
 
 	//public Transform kirby;
-	public int cameraRange = 6;
+	public int cameraRange = 4;
 	public static float enemyAttackDis = 2.5f;
 
 	public GameObject	beamPrefab;
@@ -48,19 +50,23 @@ public class EnemyScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) > cameraRange && hasSpawn == false) {
-			hasEnter = false;
-		}
+		//Debug.Log ("kirby and " + this + "distance " + Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) );
 
 		if (hasSpawn == true) {
-			if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) <= KirbyScript.kirbyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= 1.5f) {
 			//	Debug.Log(this + "current enemy change");
 				SingletonScript.Instance.current_enemy = gameObject;
 			}
 
-			if (Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) <= enemyAttackDis) {
+			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= enemyAttackDis) {
 			//	Debug.Log(this + "attack kirby");
 				SingletonScript.Instance.current_enemy = gameObject;
+			}
+
+			if (rigidbody2D.velocity.x > 0) {
+				transform.localScale = new Vector3 (-1*enemyScale,enemyScale , 0);
+			} else if (rigidbody2D.velocity.x < 0) {
+				transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
 			}
 		}
 
@@ -105,7 +111,7 @@ public class EnemyScript : MonoBehaviour {
 			}
 		}
 	}
-
+	
 	void FixedUpdate() {
 		Vector2 vel = rigidbody2D.velocity;
 
@@ -119,13 +125,15 @@ public class EnemyScript : MonoBehaviour {
 	public void Spwan () {
 		moveScripte.enabled = true;
 
-		if (kirby.transform.position.x/2.5f <= transform.position.x/4f) {
+		if (kirby.transform.position.x <= transform.position.x) {
 			moveScripte.speed = -2f;
+			transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
 		} else {
 			moveScripte.speed = 2f;
+			transform.localScale = new Vector3 (-1*enemyScale,enemyScale , 0);
 		}
-		Debug.Log ("kirby " +kirby.transform.position.x/2.5f + " enemy " +  transform.position.x/4f);
-		transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
+		Debug.Log ("kirby " +kirby.transform.position.x + " enemy " +  transform.position.x);
+
 		hasSpawn = true;
 		collider2D.enabled = true;
 		transform.position = originalPosition;
@@ -187,10 +195,13 @@ public class EnemyScript : MonoBehaviour {
 				rigidbody2D.velocity = vel;
 			} 
 
-			if (action < 1 && hasPower){
+			if (action < 1 && hasPower && 
+			    transform.rigidbody2D.velocity.y==0){
+
 				executing = true;
 
-				float dir = -Mathf.Sign (transform.localScale.x);
+				float dir = Mathf.Sign (moveScripte.speed);
+
 				Vector3 startPos = transform.position;
 				startPos.x += dir * renderer.bounds.size.x / 2;
 
@@ -208,11 +219,30 @@ public class EnemyScript : MonoBehaviour {
 					GameObject spark = 
 						Instantiate (sparkPrefab, transform.position, transform.rotation) as GameObject;
 					spark.GetComponent<Spark>().SetAimTag ("Player");
+					spark.GetComponent<Spark>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
+
+					AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+					audio.clip = sparkSound;
+					audio.loop = true;
+					audio.playOnAwake = false;
+					audio.volume = 0.4f;
+					audio.Play();
+					Destroy(audio, sparkSound.length*4);
 				} else if (powerType == 3) {
+					Debug.Log("kir, ene "+kirby.transform.position.x+", "+transform.position.x);
+					if (kirby.transform.position.x <= transform.position.x) {
+						transform.localScale = new Vector3 (-1*enemyScale,enemyScale , 0);
+					} else {
+						transform.localScale = new Vector3 (enemyScale,enemyScale , 0);
+					}
+					dir = -Mathf.Sign (transform.localScale.x);
 					GameObject fire = 
 						Instantiate (firePrefab, transform.position, transform.rotation) as GameObject;
 					fire.GetComponent<fire>().SetAimTag ("Player");
 					fire.GetComponent<fire>().SetDirection (dir);
+					fire.GetComponent<fire>().SetAudio (scoreSound, loseBloodSound, loseLifeSound);
+
+					PlaySoundEffect(fireSound, false, false, 0.4f);
 				}
 
 				speed = moveScripte.speed;
@@ -227,5 +257,6 @@ public class EnemyScript : MonoBehaviour {
 		audio.playOnAwake = onAwake;
 		audio.volume = vol;
 		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

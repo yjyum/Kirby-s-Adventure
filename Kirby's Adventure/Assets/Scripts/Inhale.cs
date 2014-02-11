@@ -48,6 +48,19 @@ public class Inhale : MonoBehaviour {
 			}
 		}
 		//Destroy (gameObject);
+
+		if (col.gameObject.tag.Equals("Powerup")) {
+			Debug.Log("inhaleParticle on collision with" + col.gameObject);
+			SingletonScript.Instance.score += 10000; 
+			Destroy(col.gameObject);
+		}
+
+		if (col.gameObject.tag.Equals("bullet")) {
+			Debug.Log("inhaleParticle on collision with" + col.gameObject);
+			character.GetComponent<Animator>().SetBool("withEnemy", true);
+			character.GetComponent<Animator>().SetBool("executing", false);
+			Destroy(col.gameObject);
+		}
 	}
 	
 	public void SetDirection(float dir) {

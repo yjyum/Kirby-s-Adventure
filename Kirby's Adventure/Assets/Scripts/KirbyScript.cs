@@ -89,7 +89,9 @@ public class KirbyScript : MonoBehaviour {
 			ZCommand (ref vel);
 			XCommand (ref vel);
 
-			if (Input.GetKey (KeyCode.Space) && animator.GetFloat("powerType")!=0 ) {
+			if (Input.GetKey (KeyCode.Space) 
+			    && !animator.GetBool("withEnemy")
+			    && animator.GetFloat("powerType")!=0 ) {
 				animator.SetFloat ("powerType", 0f);
 			}
 		
@@ -128,7 +130,8 @@ public class KirbyScript : MonoBehaviour {
 			float distance = Mathf.Abs(transform.position.x - go.transform.position.x);
 			//Debug.Log(go + " Distance : " + distance + go);
 			EnemyScript es = (EnemyScript) go.GetComponent(typeof(EnemyScript));
-			if (es.hasSpawn == false && distance > 6f) {
+
+			if (es && es.hasSpawn == false && distance > 6f) {
 			//	Debug.Log("Spawn");
 				es.Spwan ();
 			}
@@ -144,7 +147,11 @@ public class KirbyScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-
+		if (col.gameObject.tag.Equals ("Powerup")) {
+			Debug.Log("kirby on collision with" + col.gameObject);
+			SingletonScript.Instance.score += 10000;
+			Destroy(col.gameObject);
+		}
 	}
 
 	public void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {

@@ -7,6 +7,9 @@ public class MoveScript : MonoBehaviour {
 	public float 		flySpeed = 4f;
 	public float		flyTime = 0.8f;
 	public bool 		canFly = false;
+	public bool			withUmbrella = false;
+
+	private bool 		grounded = false;
 
 	// Use this for initialization
 	void Start () {
@@ -16,19 +19,30 @@ public class MoveScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector2 vel = rigidbody2D.velocity;
-		vel.x = speed;
-		if (canFly) {
-			flyTime -= Time.deltaTime;
-			if (flyTime <= 0) {
-				flySpeed *= Random.Range (-1, 1);
-				flyTime = 0.8f;
-			} 
-			if (transform.position.y <= 8f) {
-				flySpeed = 4f;
-				flyTime = 0.8f;
+
+		if (withUmbrella) {
+			if (grounded) {
+				this.GetComponent<Animator>().Play("waddleDoo");
+				vel.x = speed;
+				this.rigidbody2D.mass = 1f;
+				this.rigidbody2D.gravityScale = 1f;
 			}
-			vel.y = flySpeed;
+		} else {
+			vel.x = speed;
+			if (canFly) {
+				flyTime -= Time.deltaTime;
+				if (flyTime <= 0) {
+					flySpeed *= Random.Range (-1, 1);
+					flyTime = 0.8f;
+				} 
+				if (transform.position.y <= 8f) {
+					flySpeed = 4f;
+					flyTime = 0.8f;
+				}
+				vel.y = flySpeed;
+			}
 		}
+
 		rigidbody2D.velocity = vel;
 	}
 
@@ -41,4 +55,11 @@ public class MoveScript : MonoBehaviour {
 		transform.position = curr_pos;
 	}
 
+	void OnTriggerEnter2D(Collider2D other) {
+		grounded = true;
+	}
+	
+	void OnTriggerExit2D(Collider2D other) {
+		grounded = false;
+	}
 }

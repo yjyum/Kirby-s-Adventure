@@ -6,6 +6,7 @@ public class StarPower : MonoBehaviour {
 	public float 	direction;
 	public float 	force = 500f;
 	public AudioClip 		scoreSound;
+	public AudioClip 		winSound;
 
 	void Start() {
 		rigidbody2D.AddForce (new Vector2 (force * direction, 0));
@@ -30,6 +31,12 @@ public class StarPower : MonoBehaviour {
 		if (col.gameObject.tag.Equals("boss")) {
 			SingletonScript.Instance.score += 100000;
 			Destroy(col.gameObject);
+
+			GameObject kirby = GameObject.FindWithTag("Player");
+			KirbyScript ks = (KirbyScript) kirby.GetComponent(typeof(KirbyScript));
+			ks.PlaySoundEffect(winSound, false, false, 0.4f);
+
+			//Application.LoadLevel("Vegetable Valley 1");
 		}
 
 		Destroy (gameObject);
@@ -39,7 +46,8 @@ public class StarPower : MonoBehaviour {
 		direction = dir;
 	}
 
-	public void SetAudio(AudioClip score) {
+	public void SetAudio(AudioClip score, AudioClip win) {
 		scoreSound = score;
+		winSound = win;
 	}
 }

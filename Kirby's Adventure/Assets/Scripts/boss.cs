@@ -5,6 +5,8 @@ public class boss : MonoBehaviour {
 
 	public GameObject bulletPrefab;
 	public float attackDis = 10f;
+
+	public AudioClip 	windSound;
 	
 	private float shootInterval = 0f;
 	private GameObject kirby;
@@ -21,6 +23,8 @@ public class boss : MonoBehaviour {
 					Instantiate (bulletPrefab, transform.position, transform.rotation)
 					as GameObject;
 				shootInterval = 2f;
+
+				PlaySoundEffect (windSound, false, false, 0.4f);
 			}
 		}
 
@@ -65,5 +69,15 @@ public class boss : MonoBehaviour {
 				* col.gameObject.renderer.bounds.size.x / 2;
 			transform.position = pos;
 		}
+	}
+
+	public void PlaySoundEffect(AudioClip clip, bool loop, bool onAwake, float vol) {
+		AudioSource audio = (AudioSource) gameObject.AddComponent(typeof(AudioSource));
+		audio.clip = clip;
+		audio.loop = loop;
+		audio.playOnAwake = onAwake;
+		audio.volume = vol;
+		audio.Play();
+		Destroy(audio, clip.length);
 	}
 }

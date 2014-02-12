@@ -52,6 +52,10 @@ public class EnemyScript : MonoBehaviour {
 	void Update () {
 		//Debug.Log ("kirby and " + this + "distance " + Mathf.Abs(kirby.transform.position.x/2.5f - transform.position.x/4f) );
 
+		if (transform.position.y < 4f) {
+			Reset ();
+		}
+
 		if (hasSpawn == true) {
 			if (Mathf.Abs(kirby.transform.position.x - transform.position.x) <= 1.5f) {
 			//	Debug.Log(this + "current enemy change");

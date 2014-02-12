@@ -51,6 +51,7 @@ public class KirbyScript : MonoBehaviour {
 	public AudioClip doorSound;
 	public AudioClip sparkSound;
 	public AudioClip fireSound;
+	public AudioClip winSound;
 
 	private Animator 	animator;
 
@@ -216,7 +217,7 @@ public class KirbyScript : MonoBehaviour {
 		GameObject star = 
 			Instantiate (starPrefab, startPos, transform.rotation) as GameObject;
 		star.GetComponent<StarPower>().SetDirection (dir);
-		star.GetComponent<StarPower>().SetAudio (scoreSound);
+		star.GetComponent<StarPower>().SetAudio (scoreSound, winSound);
 
 		animator.SetFloat ("powerType", 0f);
 

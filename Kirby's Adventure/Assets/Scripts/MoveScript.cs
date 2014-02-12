@@ -33,11 +33,11 @@ public class MoveScript : MonoBehaviour {
 				flyTime -= Time.deltaTime;
 				if (flyTime <= 0) {
 					flySpeed *= Random.Range (-1, 1);
-					flyTime = 0.6f;
+					flyTime = 0.8f;
 				} 
 				if (transform.position.y <= 8.8f) {
 					flySpeed = 4f;
-					flyTime = 0.6f;
+					flyTime = 0.5f;
 				}
 				vel.y = flySpeed;
 			}

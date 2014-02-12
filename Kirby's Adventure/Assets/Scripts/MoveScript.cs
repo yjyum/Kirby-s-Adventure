@@ -5,7 +5,7 @@ public class MoveScript : MonoBehaviour {
 
 	public float		speed = -1.5f;
 	public float 		flySpeed = 4f;
-	public float		flyTime = 0.8f;
+	public float		flyTime = 0.6f;
 	public bool 		canFly = false;
 	public bool			withUmbrella = false;
 
@@ -33,11 +33,11 @@ public class MoveScript : MonoBehaviour {
 				flyTime -= Time.deltaTime;
 				if (flyTime <= 0) {
 					flySpeed *= Random.Range (-1, 1);
-					flyTime = 0.8f;
+					flyTime = 0.6f;
 				} 
-				if (transform.position.y <= 8f) {
+				if (transform.position.y <= 8.8f) {
 					flySpeed = 4f;
-					flyTime = 0.8f;
+					flyTime = 0.6f;
 				}
 				vel.y = flySpeed;
 			}

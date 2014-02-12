@@ -27,6 +27,7 @@ public class KirbyScript : MonoBehaviour {
 	public GameObject	sparkPrefab;
 	public GameObject	inhalePrefab;
 	public GameObject	firePrefab;
+	public GameObject	discardStarPrefab;
 	
 	public Vector2 		vel;
 	
@@ -93,6 +94,12 @@ public class KirbyScript : MonoBehaviour {
 			    && !animator.GetBool("withEnemy")
 			    && animator.GetFloat("powerType")!=0 ) {
 				animator.SetFloat ("powerType", 0f);
+
+				//GameObject discardStar = 
+				//	Instantiate(discardStarPrefab, new Vector3(transform.position.x, transform.position.y, -3f), transform.rotation)
+				//	as GameObject;
+				//Debug.Log(discardStar.transform.position.z);
+				//discardStar.rigidbody2D.AddForce(new Vector2(-transform.localScale.x, 1f));
 			}
 		
 			// "DOUBLE LEFT" & "DOUBLE RIGHT" command: dash
@@ -487,4 +494,5 @@ public class KirbyScript : MonoBehaviour {
 	#endregion
 
 	#endregion
+
 }

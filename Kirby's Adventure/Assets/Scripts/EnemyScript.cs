@@ -24,8 +24,8 @@ public class EnemyScript : MonoBehaviour {
 	private Vector3 	originalPosition;
 	private float 		enemyScale = 4f;
 	private float		powerTime = 0.8f;
-	private float 		sparkInterval = 0f;
-	private float		fireInterval = 0.2f;
+	public float 		sparkInterval = 0f;
+	public float		fireInterval = 0.2f;
 	private bool		executing = false;
 	public float 		kirbyScale = 2.5f;
 
@@ -45,7 +45,7 @@ public class EnemyScript : MonoBehaviour {
 		kirby = GameObject.FindWithTag("Player");
 		originalPosition = transform.position;
 		speed = moveScripte.speed;
-		InvokeRepeating("EnemyAttack", 0f, 1.8f);
+		InvokeRepeating("EnemyAttack", 0f, 2.1f);
 	}
 
 	// Update is called once per frame
@@ -132,7 +132,7 @@ public class EnemyScript : MonoBehaviour {
 			moveScripte.speed = 2f;
 			transform.localScale = new Vector3 (-1*enemyScale,enemyScale , 0);
 		}
-		Debug.Log ("kirby " +kirby.transform.position.x + " enemy " +  transform.position.x);
+//		Debug.Log ("kirby " +kirby.transform.position.x + " enemy " +  transform.position.x);
 
 		hasSpawn = true;
 		collider2D.enabled = true;
@@ -147,7 +147,7 @@ public class EnemyScript : MonoBehaviour {
 				Reset();
 			}
 			if (col.gameObject.tag.Equals("BottonPlatform")) {
-				Debug.Log(this + "enemy collision edge 2");
+//				Debug.Log(this + "enemy collision edge 2");
 				moveScripte.ChangeDirection();
 			}
 			// collide with kirby
@@ -165,6 +165,10 @@ public class EnemyScript : MonoBehaviour {
 					SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
 					SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
 					Reset();
+
+					GameObject script = GameObject.FindWithTag("script");
+					SavedVariables sv = (SavedVariables) script.GetComponent(typeof(SavedVariables));
+					sv.callRevive();
 
 					PlaySoundEffect(loseBloodSound, false, false, 0.4f);
 
@@ -229,7 +233,7 @@ public class EnemyScript : MonoBehaviour {
 					audio.Play();
 					Destroy(audio, sparkSound.length*4);
 				} else if (powerType == 3) {
-					Debug.Log("kir, ene "+kirby.transform.position.x+", "+transform.position.x);
+//					Debug.Log("kir, ene "+kirby.transform.position.x+", "+transform.position.x);
 					if (kirby.transform.position.x <= transform.position.x) {
 						transform.localScale = new Vector3 (-1*enemyScale,enemyScale , 0);
 					} else {

@@ -12,7 +12,7 @@ public class KirbyStatusScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("status " + (int)SingletonScript.Instance.kirby_animator.GetFloat ("powerType"));
+		//Debug.Log ("status " + (int)SingletonScript.Instance.kirby_animator.GetFloat ("powerType"));
 		animator.SetInteger ("status", (int)SingletonScript.Instance.kirby_animator.GetFloat ("powerType"));
 	}
 }

@@ -50,6 +50,12 @@ public class fire : MonoBehaviour {
 				EnemyScript es = (EnemyScript) 
 					SingletonScript.Instance.current_enemy.GetComponent(typeof(EnemyScript));
 				es.Reset();
+
+				GameObject script = GameObject.FindWithTag("script");
+				SavedVariables sv = (SavedVariables) script.GetComponent(typeof(SavedVariables));
+				sv.callRevive();
+				
+				es.fireInterval = 0.2f;
 				if (SingletonScript.Instance.kirby_life % 6 == 0) {
 					Application.LoadLevel ("Vegetable Valley 1");
 				}

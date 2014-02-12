@@ -8,6 +8,8 @@ public class StarPower : MonoBehaviour {
 	public AudioClip 		scoreSound;
 
 	void Start() {
+		Debug.Log ("!!!!!!!!!!!!!!"+transform.position.z);
+
 		rigidbody2D.AddForce (new Vector2 (force * direction, 0));
 	}
 

@@ -76,8 +76,14 @@ public class BeamPower : MonoBehaviour {
 				if (es.hasSpawn) {
 					SingletonScript.Instance.kirby_life --;
 
+
+
 					GameObject kirby = GameObject.FindWithTag("Player");
 					KirbyScript ks = (KirbyScript) kirby.GetComponent(typeof(KirbyScript));
+
+					GameObject script = GameObject.FindWithTag("script");
+					SavedVariables sv = (SavedVariables) script.GetComponent(typeof(SavedVariables));
+					sv.callRevive();
 
 					if (SingletonScript.Instance.kirby_life % 6 == 0) {
 						ks.PlaySoundEffect(loseLifeSound, false, false, 0.4f);
@@ -114,4 +120,5 @@ public class BeamPower : MonoBehaviour {
 		audio.Play();
 		Destroy(audio, clip.length);
 	}
+
 }

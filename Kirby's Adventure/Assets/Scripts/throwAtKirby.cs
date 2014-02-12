@@ -25,6 +25,10 @@ public class throwAtKirby : MonoBehaviour {
 			SingletonScript.Instance.kirby_animator.SetBool ("withEnemy", false);
 			SingletonScript.Instance.kirby_animator.SetBool ("executing", false);
 			SingletonScript.Instance.kirby_animator.SetFloat ("powerType", 0f);
+
+			GameObject script = GameObject.FindWithTag("script");
+			SavedVariables sv = (SavedVariables) script.GetComponent(typeof(SavedVariables));
+			sv.callRevive();
 			
 			if (SingletonScript.Instance.kirby_life % 6 == 0) {
 				Application.LoadLevel (Application.loadedLevel);
